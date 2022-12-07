@@ -8,6 +8,7 @@ import { AboutMeContainerComponent } from './components/about-me-container/about
 import { ProjectsContainerComponent } from './components/projects-container/projects-container.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ExperienceContainerComponent } from './components/experience-container/experience-container.component';
+import { SociaLMediaComponent } from './components/socia-l-media/socia-l-media.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { ExperienceContainerComponent } from './components/experience-container/
     ProjectsContainerComponent,
     FooterComponent,
     ExperienceContainerComponent,
+    SociaLMediaComponent,
   ],
   imports: [
     BrowserModule
