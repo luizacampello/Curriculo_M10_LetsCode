@@ -13,6 +13,8 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { LanguagesComponent } from './components/languages/languages.component';
 import { WorkExperiencesComponent } from './components/work-experiences/work-experiences.component';
 import { EducationExperiencesComponent } from './components/education-experiences/education-experiences.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { NavBarMobileComponent } from './components/nav-bar-mobile/nav-bar-mobile.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,8 @@ import { EducationExperiencesComponent } from './components/education-experience
     LanguagesComponent,
     WorkExperiencesComponent,
     EducationExperiencesComponent,
+    NavBarComponent,
+    NavBarMobileComponent,
   ],
   imports: [
     BrowserModule
