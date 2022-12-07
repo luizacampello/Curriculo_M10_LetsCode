@@ -8,6 +8,8 @@ import { AboutMeContainerComponent } from './components/about-me-container/about
 import { ProjectsContainerComponent } from './components/projects-container/projects-container.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ExperienceContainerComponent } from './components/experience-container/experience-container.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { NavBarMobileComponent } from './components/nav-bar-mobile/nav-bar-mobile.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,8 @@ import { ExperienceContainerComponent } from './components/experience-container/
     ProjectsContainerComponent,
     FooterComponent,
     ExperienceContainerComponent,
+    NavBarComponent,
+    NavBarMobileComponent,
   ],
   imports: [
     BrowserModule
