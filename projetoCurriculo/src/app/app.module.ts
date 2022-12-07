@@ -6,6 +6,7 @@ import { HomeContainerComponent } from './components/home-container/home-contain
 import { ContactFormContainerComponent } from './components/contact-form-container/contact-form-container.component';
 import { AboutMeContainerComponent } from './components/about-me-container/about-me-container.component';
 import { ProjectsContainerComponent } from './components/projects-container/projects-container.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { ProjectsContainerComponent } from './components/projects-container/proj
     AboutMeContainerComponent,
     HomeContainerComponent,
     ProjectsContainerComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule
