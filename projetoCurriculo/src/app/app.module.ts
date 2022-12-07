@@ -8,7 +8,9 @@ import { AboutMeContainerComponent } from './components/about-me-container/about
 import { ProjectsContainerComponent } from './components/projects-container/projects-container.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ExperienceContainerComponent } from './components/experience-container/experience-container.component';
-import { SociaLMediaComponent } from './components/socia-l-media/socia-l-media.component';
+import { SociaLMediaComponent } from './components/social-media/social-media.component';
+import { WorkExperiencesComponent } from './components/work-experiences/work-experiences.component';
+import { EducationExperiencesComponent } from './components/education-experiences/education-experiences.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { SociaLMediaComponent } from './components/socia-l-media/socia-l-media.c
     FooterComponent,
     ExperienceContainerComponent,
     SociaLMediaComponent,
+    WorkExperiencesComponent,
+    EducationExperiencesComponent,
   ],
   imports: [
     BrowserModule
