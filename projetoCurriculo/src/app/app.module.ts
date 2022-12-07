@@ -15,6 +15,7 @@ import { WorkExperiencesComponent } from './components/work-experiences/work-exp
 import { EducationExperiencesComponent } from './components/education-experiences/education-experiences.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { NavBarMobileComponent } from './components/nav-bar-mobile/nav-bar-mobile.component';
+import { HomeInnerComponent } from './components/home-inner/home-inner.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { NavBarMobileComponent } from './components/nav-bar-mobile/nav-bar-mobil
     EducationExperiencesComponent,
     NavBarComponent,
     NavBarMobileComponent,
+    HomeInnerComponent,
   ],
   imports: [
     BrowserModule
