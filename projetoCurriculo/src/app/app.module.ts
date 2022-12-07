@@ -7,6 +7,7 @@ import { ContactFormContainerComponent } from './components/contact-form-contain
 import { AboutMeContainerComponent } from './components/about-me-container/about-me-container.component';
 import { ProjectsContainerComponent } from './components/projects-container/projects-container.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ExperienceContainerComponent } from './components/experience-container/experience-container.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { FooterComponent } from './components/footer/footer.component';
     HomeContainerComponent,
     ProjectsContainerComponent,
     FooterComponent,
+    ExperienceContainerComponent,
   ],
   imports: [
     BrowserModule
