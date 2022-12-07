@@ -9,6 +9,8 @@ import { ProjectsContainerComponent } from './components/projects-container/proj
 import { FooterComponent } from './components/footer/footer.component';
 import { ExperienceContainerComponent } from './components/experience-container/experience-container.component';
 import { SociaLMediaComponent } from './components/social-media/social-media.component';
+import { SkillsComponent } from './components/skills/skills.component';
+import { LanguagesComponent } from './components/languages/languages.component';
 import { WorkExperiencesComponent } from './components/work-experiences/work-experiences.component';
 import { EducationExperiencesComponent } from './components/education-experiences/education-experiences.component';
 
@@ -22,6 +24,8 @@ import { EducationExperiencesComponent } from './components/education-experience
     FooterComponent,
     ExperienceContainerComponent,
     SociaLMediaComponent,
+    SkillsComponent,
+    LanguagesComponent,
     WorkExperiencesComponent,
     EducationExperiencesComponent,
   ],
