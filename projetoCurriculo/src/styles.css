@@ -6,30 +6,34 @@
     --bg-dark-color: #343a40;
     --text-light-color: #F9F9F9;
     --text-dark-color: #343a40;
+    --footer-light-color: #EAEAEA;
+    --footer-dark-color: #2C2C2C;
     --heading-color: #292922;
 }
 
 body.bootstrap {
     background-color: var(--bg-light-color);
- }
+}
 
 body.bootstrap h1, body.bootstrap h2, body.bootstrap-dark h1, body.bootstrap-dark h2{
     color: var(--primary-color)
 }
- body.bootstrap p, body.bootstrap h3, body.bootstrap h4, body.bootstrap h5, body.bootstrap h6, body.bootstrap a {
-    color: var(--text-dark-color);
- }
-  body.bootstrap-dark {
-    background-color: var(--bg-dark-color);
- }
-  body.bootstrap-dark p, body.bootstrap-dark h3, body.bootstrap-dark h4, body.bootstrap-dark h5, body.bootstrap-dark h6, body.bootstrap-dark a{
-    color: var(--text-light-color);
- }
 
- body.bootstrap ul.timeline > li:before{
-    background: var(--bg-light-color);;
+body.bootstrap p, body.bootstrap h3, body.bootstrap h4, body.bootstrap h5, body.bootstrap h6, body.bootstrap a {
+    color: var(--text-dark-color);
 }
 
+body.bootstrap-dark {
+    background-color: var(--bg-dark-color);
+}
+
+body.bootstrap-dark p, body.bootstrap-dark h3, body.bootstrap-dark h4, body.bootstrap-dark h5, body.bootstrap-dark h6, body.bootstrap-dark a{
+    color: var(--text-light-color);
+}
+
+body.bootstrap ul.timeline > li:before{
+    background: var(--bg-light-color);;
+}
 
 body.bootstrap-dark ul.timeline > li:before{
     background: var(--bg-dark-color);;
