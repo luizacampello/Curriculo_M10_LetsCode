@@ -4,7 +4,10 @@
 <app-nav-bar></app-nav-bar>
 <app-nav-bar-mobile></app-nav-bar-mobile>
 <app-about-me-container></app-about-me-container>
-<app-experience-container></app-experience-container>
+<app-experience-container
+    [workExperienceArray] = "workExperienceArray"
+    [educationExperienceArray] = "educationExperienceArray"
+></app-experience-container>
 <app-projects-container></app-projects-container>
 <app-contact-form-container></app-contact-form-container>
 <app-footer
