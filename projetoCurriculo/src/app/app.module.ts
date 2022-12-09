@@ -8,8 +8,15 @@ import { AboutMeContainerComponent } from './components/about-me-container/about
 import { ProjectsContainerComponent } from './components/projects-container/projects-container.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ExperienceContainerComponent } from './components/experience-container/experience-container.component';
+import { SociaLMediaComponent } from './components/social-media/social-media.component';
+import { SkillsComponent } from './components/skills/skills.component';
+import { LanguagesComponent } from './components/languages/languages.component';
 import { WorkExperiencesComponent } from './components/work-experiences/work-experiences.component';
 import { EducationExperiencesComponent } from './components/education-experiences/education-experiences.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { NavBarMobileComponent } from './components/nav-bar-mobile/nav-bar-mobile.component';
+import { HomeInnerComponent } from './components/home-inner/home-inner.component';
+import { ThemeToggleComponent } from './components/theme-toggle/theme-toggle.component';
 
 @NgModule({
   declarations: [
@@ -20,8 +27,15 @@ import { EducationExperiencesComponent } from './components/education-experience
     ProjectsContainerComponent,
     FooterComponent,
     ExperienceContainerComponent,
+    SociaLMediaComponent,
+    SkillsComponent,
+    LanguagesComponent,
     WorkExperiencesComponent,
     EducationExperiencesComponent,
+    NavBarComponent,
+    NavBarMobileComponent,
+    HomeInnerComponent,
+    ThemeToggleComponent,
   ],
   imports: [
     BrowserModule
