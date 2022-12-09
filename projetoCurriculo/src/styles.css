@@ -25,3 +25,12 @@ body.bootstrap h1, body.bootstrap h2, body.bootstrap-dark h1, body.bootstrap-dar
   body.bootstrap-dark p, body.bootstrap-dark h3, body.bootstrap-dark h4, body.bootstrap-dark h5, body.bootstrap-dark h6, body.bootstrap-dark a{
     color: var(--text-light-color);
  }
+
+ body.bootstrap ul.timeline > li:before{
+    background: var(--bg-light-color);;
+}
+
+
+body.bootstrap-dark ul.timeline > li:before{
+    background: var(--bg-dark-color);;
+}

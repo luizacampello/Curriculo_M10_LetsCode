@@ -1,3 +1,9 @@
-<h2>Experiências</h2>
-<app-education-experiences></app-education-experiences>
-<app-work-experiences></app-work-experiences>
+<div class="d-flex flex-row">
+    <app-education-experiences
+        [educationExperienceArray] = "educationExperienceArray"
+    ></app-education-experiences>
+    <app-work-experiences
+        [workExperienceArray] = "workExperienceArray"
+    ></app-work-experiences>
+</div>
+

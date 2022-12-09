@@ -1,1 +1,14 @@
-<p>education-experiences works!</p>
+<div class="container mt-5 mb-5">
+    <div class="row">
+      <div class="col-md-10 offset-md-3">
+        <h2>Educação</h2>
+        <ul class="timeline">
+            <li *ngFor="let educationExperience of educationExperienceArray">
+                    <h4>{{educationExperience.courseName}} | {{educationExperience.degree}}</h4>
+                    <p class="mb-0">{{educationExperience.local}}</p>
+                    <p class="mb-0" style = "font-weight:lighter" >{{educationExperience.beginDate}} - {{educationExperience.endDate}}</p>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </div>
