@@ -16,6 +16,7 @@ import { EducationExperiencesComponent } from './components/education-experience
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { NavBarMobileComponent } from './components/nav-bar-mobile/nav-bar-mobile.component';
 import { HomeInnerComponent } from './components/home-inner/home-inner.component';
+import { ThemeToggleComponent } from './components/theme-toggle/theme-toggle.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { HomeInnerComponent } from './components/home-inner/home-inner.component
     NavBarComponent,
     NavBarMobileComponent,
     HomeInnerComponent,
+    ThemeToggleComponent,
   ],
   imports: [
     BrowserModule
