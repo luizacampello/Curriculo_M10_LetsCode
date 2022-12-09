@@ -1,0 +1,47 @@
+.toggleBox{
+    display:flex;
+    justify-content: flex-end;
+    padding: 0 2rem;
+}
+.toggleBox p{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 0.8rem;
+}
+.oval {
+    position: relative;
+    margin: 10px;
+    width: 50px;
+    height: 25px;
+    border-radius: 25px;
+    background-color: var(--secondary-color);
+    -webkit-transition: background-color 0.15s ease-in-out;
+    transition: background-color 0.15s ease-in-out;
+    box-shadow:
+							0 -0.25rem 1.5rem rgb(236, 236, 236) inset,
+							0 0.75rem 0.5rem rgba(112, 109, 109, 0.4) inset,
+							0 0.25rem 0.5rem 0 rgb(58, 58, 58) inset;
+  }
+
+  .ovalSelected {
+    background: var(--secondary-color);
+  }
+
+  .button {
+    position: absolute;
+    margin-top: 3px;
+    margin-left: 3px;
+    left: 25px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--bg-dark-color);
+    -webkit-transition: left 0.15s ease-in-out, background-color 0.15s ease-in-out;
+    transition: left 0.15s ease-in-out, background-color 0.15s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+
+  .buttonSelected {
+    left: 0px;
+    background-color: var(--bg-light-color);
+  }
