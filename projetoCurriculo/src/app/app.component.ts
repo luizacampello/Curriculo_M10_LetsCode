@@ -3,6 +3,7 @@ import { socialMediaData } from 'src/app/models/socialmedia-data.model';
 import { Component, OnInit, Renderer2 } from '@angular/core';
 import { ThemeService } from './services/theme.service';
 import { educationExperienceData } from './models/educationExperience-data.model';
+import { languageData } from './models/language-data.model';
 
 @Component({
   selector: 'app-root',
@@ -31,31 +32,55 @@ export class AppComponent implements OnInit{
   ];
 
   public workExperienceArray: workExperienceData[] = [
-    { name: "Github",
+    {
+      name: "Github",
       beginDate: "Janeiro-2020",
       endDate: "Atualmente",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis.",
-      local: "Canada" },
-
-      { name: "Google",
+      local: "Canada"
+    },
+    {
+      name: "Google",
       beginDate: "Dezembro-2016",
       endDate: "Outubro-2019",
       description: "Lorem ipsum dolor elementum lorem ornare sit amet, consectetur adipiscing elit. Quisque scelerisque adipiscing diam non nisi semper. Maecenas facilisis placerat, facilisis mollis.",
-      local: "Belo Horizonte-MG" },
+      local: "Belo Horizonte-MG"
+    }
   ];
 
   public educationExperienceArray: educationExperienceData[] = [
-    { courseName: "Geologia",
+    {
+      courseName: "Geologia",
       degree: "Graduação",
       beginDate: "Março-2014",
       endDate: "Dezembro-2020",
-      local: "Universidade de Brasilia" },
-
-      {courseName: "Processamento de imagens de Satélite",
+      local: "Universidade de Brasilia"
+    },
+    {
+      courseName: "Processamento de imagens de Satélite",
       degree: "Mestrado",
       beginDate: "Janeiro-2021",
       endDate: "Atualmente",
-      local: "PPGGAG - Universidade de Brasilia"},
+      local: "PPGGAG - Universidade de Brasilia"
+    },
+  ];
+
+  public languagesArray: languageData[] = [
+    {
+      id: "EN",
+      name: "Inglês",
+      level: "Avançado"
+    },
+    {
+      id: "FR",
+      name: "Francês",
+      level: "Básico",
+      description: ["TCF TP – Tout Public", "Intercâmbio de 2 meses na escola Le Cordon Bleu"]
+    },
+    { id: "ESP",
+      name: "Espanhol",
+      level: "Básico"
+    }
   ];
 
 }

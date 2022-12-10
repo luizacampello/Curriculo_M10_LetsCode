@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { languageData } from 'src/app/models/language-data.model';
 
 @Component({
   selector: 'app-languages',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./languages.component.css']
 })
 export class LanguagesComponent {
+
+  @Input() public languagesArray! : Array<languageData>;
 
 }
