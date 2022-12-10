@@ -8,6 +8,4 @@ import { languageData } from 'src/app/models/language-data.model';
 })
 export class AboutMeContainerComponent {
 
-  @Input() public languagesArray! : Array<languageData>;
-
 }

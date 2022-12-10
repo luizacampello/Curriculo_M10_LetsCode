@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { educationExperienceData } from 'src/app/models/educationExperience-data.model';
+import { ContentService } from 'src/app/services/content.service';
 
 @Component({
   selector: 'app-education-experiences',
@@ -8,6 +9,16 @@ import { educationExperienceData } from 'src/app/models/educationExperience-data
 })
 
 export class EducationExperiencesComponent {
-  @Input() public educationExperienceArray! : Array<educationExperienceData>;
+  public educationExperienceArray : Array<educationExperienceData> = [];
+
+  constructor (private contentService: ContentService) {}
+
+  ngOnInit(): void {
+    this.geteducationExperienceArray();
+  }
+
+  geteducationExperienceArray(): void {
+    this.educationExperienceArray = this.contentService.geteducationExperienceArray();
+  }
 
 }

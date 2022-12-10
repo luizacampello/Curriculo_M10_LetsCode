@@ -8,6 +8,5 @@ import { workExperienceData } from 'src/app/models/workExperience-data.model';
   styleUrls: ['./experience-container.component.css']
 })
 export class ExperienceContainerComponent {
-  @Input() public workExperienceArray! : Array<workExperienceData>;
-  @Input() public educationExperienceArray! : Array<educationExperienceData>;
+  
 }

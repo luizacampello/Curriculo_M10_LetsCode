@@ -1,5 +1,6 @@
 import { workExperienceData } from './../../models/workExperience-data.model';
 import { Component, Input } from '@angular/core';
+import { ContentService } from 'src/app/services/content.service';
 
 @Component({
   selector: 'app-work-experiences',
@@ -7,6 +8,16 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./work-experiences.component.css']
 })
 export class WorkExperiencesComponent {
-  @Input() public workExperienceArray! : Array<workExperienceData>;
+  public workExperienceArray : Array<workExperienceData> = [];
 
+  constructor (private contentService: ContentService) {}
+
+  ngOnInit(): void {
+    this.getWorkExperienceArray();
+  }
+
+  getWorkExperienceArray(): void {
+    this.workExperienceArray = this.contentService.getWorkExperienceArray();
+  }
 }
+

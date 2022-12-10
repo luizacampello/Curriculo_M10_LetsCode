@@ -9,6 +9,4 @@ import { socialMediaData } from 'src/app/models/socialmedia-data.model';
 
 export class HomeContainerComponent {
 
-  @Input() public socialMediaArray! : Array<socialMediaData>;
-
 }

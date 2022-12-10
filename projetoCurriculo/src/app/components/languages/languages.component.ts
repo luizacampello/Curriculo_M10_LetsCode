@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { languageData } from 'src/app/models/language-data.model';
+import { ContentService } from 'src/app/services/content.service';
 
 @Component({
   selector: 'app-languages',
@@ -8,6 +9,16 @@ import { languageData } from 'src/app/models/language-data.model';
 })
 export class LanguagesComponent {
 
-  @Input() public languagesArray! : Array<languageData>;
+  public languagesArray : Array<languageData> = [];
+
+  constructor (private contentService: ContentService) {}
+
+  ngOnInit(): void {
+    this.getlanguagesArray();
+  }
+
+  getlanguagesArray(): void {
+    this.languagesArray = this.contentService.getlanguagesArray();
+  }
 
 }
