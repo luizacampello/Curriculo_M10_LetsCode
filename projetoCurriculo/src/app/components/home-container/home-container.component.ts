@@ -1,5 +1,4 @@
-import { Component, Input } from '@angular/core';
-import { socialMediaData } from 'src/app/models/socialmedia-data.model';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-home-container',

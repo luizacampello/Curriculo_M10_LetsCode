@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { educationExperienceData } from 'src/app/models/educationExperience-data.model';
 import { ContentService } from 'src/app/services/content.service';
 

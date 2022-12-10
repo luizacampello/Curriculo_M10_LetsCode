@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component} from '@angular/core';
 import { languageData } from 'src/app/models/language-data.model';
 import { ContentService } from 'src/app/services/content.service';
 

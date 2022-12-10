@@ -1,5 +1,4 @@
-import { Component, Input } from '@angular/core';
-import { languageData } from 'src/app/models/language-data.model';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-about-me-container',

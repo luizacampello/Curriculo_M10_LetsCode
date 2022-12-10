@@ -1,5 +1,5 @@
 import { workExperienceData } from './../../models/workExperience-data.model';
-import { Component, Input } from '@angular/core';
+import { Component} from '@angular/core';
 import { ContentService } from 'src/app/services/content.service';
 
 @Component({

@@ -11,6 +11,7 @@ import content from '../../content/content.json';
 export class ContentService {
 
   constructor() { }
+
   workExperienceArray : Array<workExperienceData> = content.workExperience;
   educationExperienceArray : Array<educationExperienceData> = content.educationExperience;
   socialMediaArray : Array<socialMediaData> = content.socialMedia;
