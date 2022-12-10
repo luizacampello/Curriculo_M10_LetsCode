@@ -1,0 +1,25 @@
+<h2>Linguagens</h2>
+<div class="card">
+  <div *ngFor="let language of languagesArray">
+    <div *ngIf="language.description; else emptyDescription">
+      <div>
+        <details class="info">
+          <summary>
+            <h3>{{ language.name }} | {{ language.level }}</h3>
+          </summary>
+          <div *ngFor="let descriptionLine of language.description">
+            <p>{{descriptionLine}}</p>
+          </div>
+        </details>
+      </div>
+    </div>
+
+    <ng-template #emptyDescription>
+      <div class="infoWithoutDescription">
+        <div class="fakeSummary">
+          <h3>{{ language.name }} | {{ language.level }}</h3>
+        </div>
+      </div>
+    </ng-template>
+  </div>
+</div>
