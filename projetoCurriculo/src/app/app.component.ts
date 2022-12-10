@@ -3,6 +3,7 @@ import { socialMediaData } from 'src/app/models/socialmedia-data.model';
 import { Component, OnInit, Renderer2 } from '@angular/core';
 import { ThemeService } from './services/theme.service';
 import { educationExperienceData } from './models/educationExperience-data.model';
+import { languageData } from './models/language-data.model';
 
 @Component({
   selector: 'app-root',
@@ -57,5 +58,17 @@ export class AppComponent implements OnInit{
       endDate: "Atualmente",
       local: "PPGGAG - Universidade de Brasilia"},
   ];
+
+  public languagesArray: languageData[] = [
+    { id: "EN",
+      name: "Inglês",
+      level: "Avançado" },
+
+    { id: "FR",
+      name: "Francês",
+      level: "Básico",
+      description: "Intercâmbio de 2 meses na escola Le Cordon Bleu"}
+  ];
+
 
 }
