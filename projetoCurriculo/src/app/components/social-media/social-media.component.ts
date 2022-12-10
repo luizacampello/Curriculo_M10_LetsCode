@@ -1,5 +1,6 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { socialMediaData } from 'src/app/models/socialmedia-data.model';
+import { ContentService } from 'src/app/services/content.service';
 
 @Component({
   selector: 'app-social-media',
@@ -7,6 +8,16 @@ import { socialMediaData } from 'src/app/models/socialmedia-data.model';
   styleUrls: ['./social-media.component.css']
 })
 export class SociaLMediaComponent {
-  @Input() public socialMediaArray! : Array<socialMediaData>;
+  public socialMediaArray : Array<socialMediaData> = [];
+
+  constructor (private contentService: ContentService) {}
+
+  ngOnInit(): void {
+    this.getsocialMediaArray();
+  }
+
+  getsocialMediaArray(): void {
+    this.socialMediaArray = this.contentService.getsocialMediaArray();
+  }
 
 }

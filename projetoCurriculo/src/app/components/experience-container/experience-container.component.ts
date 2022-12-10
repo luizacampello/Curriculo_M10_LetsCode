@@ -1,6 +1,4 @@
-import { Component, Input } from '@angular/core';
-import { educationExperienceData } from 'src/app/models/educationExperience-data.model';
-import { workExperienceData } from 'src/app/models/workExperience-data.model';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-experience-container',
@@ -8,6 +6,5 @@ import { workExperienceData } from 'src/app/models/workExperience-data.model';
   styleUrls: ['./experience-container.component.css']
 })
 export class ExperienceContainerComponent {
-  @Input() public workExperienceArray! : Array<workExperienceData>;
-  @Input() public educationExperienceArray! : Array<educationExperienceData>;
+
 }
