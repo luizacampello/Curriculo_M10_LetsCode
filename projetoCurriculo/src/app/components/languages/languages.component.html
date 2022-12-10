@@ -1,32 +1,25 @@
 <h2>Linguagens</h2>
-<div class="mx-5">
-    <div class="accordion" id="accordionPanelsStayOpenExample">
-        <div *ngFor="let language of languagesArray" class="accordion-item">
-            <div *ngIf="language.description; else emptyDescription">
-                <h2 class="accordion-header" id="panelsStayOpen-heading{{language.id}}">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="'#panelsStayOpen-collapse'+language.id" aria-expanded="true" [attr.aria-controls]="'panelsStayOpen-collapse' + language.id">
-                      {{language.name}} | {{language.level}}
-                    </button>
-                  </h2>
-                  <div id="panelsStayOpen-collapse{{language.id}}" class="accordion-collapse collapse show" [attr.aria-labelledby]="'panelsStayOpen-heading' + language.id">
-                    <div class="accordion-body">
-                      <p>{{language.description}}</p>
-                    </div>
-                  </div>
-            </div>
-
-            <ng-template #emptyDescription>
-                <h2 class="accordion-header" id="panelsStayOpen-heading{{language.id}}">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="'#panelsStayOpen-collapse'+language.id" aria-expanded="true" [attr.aria-controls]="'panelsStayOpen-collapse' + language.id">
-                      {{language.name}} | {{language.level}}
-                    </button>
-                  </h2>
-                  <div id="panelsStayOpen-collapse{{language.id}}" class="accordion-collapse collapse show" [attr.aria-labelledby]="'panelsStayOpen-heading' + language.id">
-                    <div class="accordion-body">
-                      <p>{{language.description}}</p>
-                    </div>
-                  </div>
-            </ng-template>
+<div class="card">
+  <div *ngFor="let language of languagesArray">
+    <div *ngIf="language.description; else emptyDescription">
+      <div>
+        <details class="info">
+          <summary>
+            <h3>{{ language.name }} | {{ language.level }}</h3>
+          </summary>
+          <div *ngFor="let descriptionLine of language.description">
+            <p>{{descriptionLine}}</p>
+          </div>
+        </details>
+      </div>
     </div>
-</div>
 
+    <ng-template #emptyDescription>
+      <div class="infoWithoutDescription">
+        <div class="fakeSummary">
+          <h3>{{ language.name }} | {{ language.level }}</h3>
+        </div>
+      </div>
+    </ng-template>
+  </div>
+</div>
