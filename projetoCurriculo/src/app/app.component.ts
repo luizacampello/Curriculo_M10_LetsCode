@@ -44,7 +44,8 @@ export class AppComponent implements OnInit{
       beginDate: "Dezembro-2016",
       endDate: "Outubro-2019",
       description: "Lorem ipsum dolor elementum lorem ornare sit amet, consectetur adipiscing elit. Quisque scelerisque adipiscing diam non nisi semper. Maecenas facilisis placerat, facilisis mollis.",
-      local: "Belo Horizonte-MG"
+      local: "Belo Horizonte-MG",
+      link: "https://www.google.com/"
     }
   ];
 
