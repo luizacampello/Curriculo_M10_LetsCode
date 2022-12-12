@@ -1,5 +1,5 @@
 import { cardContent } from './../../models/card-content.model';
-import { ChangeDetectorRef, Component, Input } from '@angular/core';
+import { Component, Input, Renderer2 } from '@angular/core';
 import { ContentService } from 'src/app/services/content.service';
 
 @Component({
@@ -7,18 +7,25 @@ import { ContentService } from 'src/app/services/content.service';
   templateUrl: './projects-container.component.html',
   styleUrls: ['./projects-container.component.css']
 })
+
 export class ProjectsContainerComponent {
   @Input() public activeId = "All";
   public cardsArray : Array<cardContent> = [];
   public cardsArrayFiltered : Array<cardContent> = [];
   public categoryArray : Array<string> = ["All"];
 
-  constructor (private contentService: ContentService) {}
+  constructor (private contentService: ContentService, private renderer: Renderer2) {}
 
   ngOnInit(): void {
     this.getCardsArray();
     this.generateCategoryList();
     this.cardsArrayFiltered = this.cardsArray;
+
+  }
+
+  ngAfterViewInit(): void {
+    this.activateButton("All");
+
   }
 
   getCardsArray(): void {
@@ -34,13 +41,34 @@ export class ProjectsContainerComponent {
     }
   });
   }
+
   filterList(event: any){
-    const id = event.target.id.toLowerCase();
-    if(id == "all"){
+
+    const id = event.target.id;
+    this.activateButton(id);
+
+    if(id == "All"){
       this.cardsArrayFiltered = this.cardsArray;
     }
     else {
-    this.cardsArrayFiltered = this.cardsArray.filter( e => e.category == id)
+      this.cardsArrayFiltered = this.cardsArray.filter( e => e.category == id.toLowerCase())
     }
   }
+
+  activateButton(id: string) {
+
+    let disableButton = document.querySelector(".selected");
+    if(disableButton !== null){
+      disableButton.classList.remove("selected");
+    }
+
+    let button = document.getElementById(id);
+    if(button !== null){
+      button.classList.add("selected");
+    }
+  }
+
+
+
+
 }

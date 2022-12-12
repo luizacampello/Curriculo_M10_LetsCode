@@ -19,14 +19,22 @@ app-projects-container{
 
 .filter button{
     margin: 10px;
-    border: none;
-    border-radius: 25px;
-    background-color: var(--bg-dark-color);
-    color: white;
 }
 
-.filter button:hover{
-
-    background-color: var(--primary-color);
-    color: white;
+.btn.btn-outline-info{
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    min-width: 10%;
+    border-radius: 50px;
 }
+.btn-outline-info:hover, .btn-outline-info:active, .btn-outline-info:visited {
+    background-color: var(--primary-color) !important;
+    color: var(--text-light-color);
+    border-color: var(--primary-color);
+}
+
+.selected {
+    background-color: var(--primary-color) !important;
+    color: var(--text-light-color) !important;
+}
+
