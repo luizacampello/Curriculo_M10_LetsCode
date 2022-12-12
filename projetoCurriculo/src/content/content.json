@@ -77,5 +77,32 @@
       "name": "Espanhol",
       "level": "Intermediário"
     }
+  ],
+
+  "skills": [
+    {
+      "name": "C#",
+      "progress": 0.95
+    },
+    {
+      "name": "SQL",
+      "progress": 0.90
+    },
+    {
+      "name": "HTML",
+      "progress": 0.80
+    },
+    {
+      "name": "CSS",
+      "progress": 0.85
+    },
+    {
+      "name": "Javascript",
+      "progress": 0.88
+    },
+    {
+      "name": "Angular",
+      "progress": 0.75
+    }
   ]
 }

@@ -1,0 +1,8 @@
+.progress-bar {
+    background-color: var(--primary-color);
+}
+
+.value {
+    float: right;
+    font-style: normal;
+}
