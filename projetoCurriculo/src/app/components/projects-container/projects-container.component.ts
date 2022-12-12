@@ -1,5 +1,5 @@
 import { cardContent } from './../../models/card-content.model';
-import { Component } from '@angular/core';
+import { ChangeDetectorRef, Component, Input } from '@angular/core';
 import { ContentService } from 'src/app/services/content.service';
 
 @Component({
@@ -8,16 +8,18 @@ import { ContentService } from 'src/app/services/content.service';
   styleUrls: ['./projects-container.component.css']
 })
 export class ProjectsContainerComponent {
+  @Input() public activeId = "All";
   public cardsArray : Array<cardContent> = [];
-  constructor (private contentService: ContentService) {}
+  public cardsArrayFilterd : Array<cardContent> = [];
   public categoryArray : Array<string> = ["All"];
+  public destroyer:boolean = true;
 
-  //ToDo: Ver todas as categorais e criar botões com *nGFor
+  constructor (private contentService: ContentService) {}
 
   ngOnInit(): void {
     this.getCardsArray();
     this.generateCategoryList();
-    console.log(this.categoryArray);
+    this.cardsArrayFilterd = this.cardsArray;
   }
 
   getCardsArray(): void {
@@ -32,5 +34,7 @@ export class ProjectsContainerComponent {
       this.categoryArray.push(text)
     }
   });
+  }
+  filterList(event: any){
   }
 }
