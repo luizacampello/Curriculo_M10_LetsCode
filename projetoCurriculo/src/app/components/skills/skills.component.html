@@ -1,1 +1,12 @@
-<p>skills works!</p>
+<h2>Habilidades</h2>
+<div class="container">
+    <div class="skills-box" *ngFor="let skill of skillsData">
+        <span>
+            {{ skill.name }}
+            <i class="value">{{ skill.progress | percent: '1.0' }}</i>
+        </span>
+        <div class="progress mb-3" style="height: 10px;">
+            <div class="progress-bar" role="progressbar" aria-label="Example with label"  aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" [style.width.%]="skill.progress * 100"></div>
+        </div>
+    </div>
+</div>
