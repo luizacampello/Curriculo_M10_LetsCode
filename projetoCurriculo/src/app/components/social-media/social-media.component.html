@@ -1,0 +1,9 @@
+<div class="d-flex flex-row">
+    <div *ngFor="let socialMedia of socialMediaArray">
+        <a href="{{socialMedia.link}}" target="_blank" rel="noopener noreferrer" title="{{socialMedia.name}}">
+            <i class="icon bi bi-{{socialMedia.name}}"></i>
+        </a>
+    </div>
+</div>
+
+
