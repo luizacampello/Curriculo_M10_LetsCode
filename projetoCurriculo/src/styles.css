@@ -53,3 +53,13 @@ body.bootstrap ul.timeline > li:before {
 body.bootstrap-dark ul.timeline > li:before {
   background: var(--bg-dark-color);
 }
+
+.bootstrap .container{
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  padding: none;
+  padding-right:0%;
+  padding-left:0%;
+}

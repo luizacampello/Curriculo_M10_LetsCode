@@ -1,13 +1,9 @@
-.container {
-    width: 80%;
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
+.container{
+    justify-content: space-between;
 }
 
 .skills-box {
-    width: 50%;
-    padding: 0 1rem;
+    width: 48%;
 }
 
 .progress-bar {
