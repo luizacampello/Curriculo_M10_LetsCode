@@ -4,8 +4,8 @@
         <button *ngFor="let category of categoryArray" id="{{ category }}" (click) = "filterList($event)"> {{ category }}</button>
     </div>
     <div class="d-flex flex-row">
-        <div class="projectCards" *ngIf="destroyer">
-            <app-card-project  *ngFor="let card of cardsArrayFilterd" [cardData]= "card"></app-card-project>
+        <div class="projectCards" >
+            <app-card-project  *ngFor="let card of cardsArrayFiltered" [cardData]= "card"></app-card-project>
         </div>
     </div>
 </div>

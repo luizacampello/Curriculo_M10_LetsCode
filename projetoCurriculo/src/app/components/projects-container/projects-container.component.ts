@@ -10,16 +10,15 @@ import { ContentService } from 'src/app/services/content.service';
 export class ProjectsContainerComponent {
   @Input() public activeId = "All";
   public cardsArray : Array<cardContent> = [];
-  public cardsArrayFilterd : Array<cardContent> = [];
+  public cardsArrayFiltered : Array<cardContent> = [];
   public categoryArray : Array<string> = ["All"];
-  public destroyer:boolean = true;
 
   constructor (private contentService: ContentService) {}
 
   ngOnInit(): void {
     this.getCardsArray();
     this.generateCategoryList();
-    this.cardsArrayFilterd = this.cardsArray;
+    this.cardsArrayFiltered = this.cardsArray;
   }
 
   getCardsArray(): void {
@@ -28,13 +27,20 @@ export class ProjectsContainerComponent {
 
   generateCategoryList(): void {
     this.cardsArray.forEach(element => {
-      let categoryTest = element.category.toLowerCase().trim();
-    if(!this.categoryArray.includes(categoryTest)){
-      const text = categoryTest.charAt(0).toUpperCase() + categoryTest.slice(1);
+      let categoryText = element.category;
+      const text = categoryText.charAt(0).toUpperCase() + categoryText.slice(1);
+    if(!this.categoryArray.includes(text)){
       this.categoryArray.push(text)
     }
   });
   }
   filterList(event: any){
+    const id = event.target.id.toLowerCase();
+    if(id == "all"){
+      this.cardsArrayFiltered = this.cardsArray;
+    }
+    else {
+    this.cardsArrayFiltered = this.cardsArray.filter( e => e.category == id)
+    }
   }
 }
