@@ -17,6 +17,7 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { NavBarMobileComponent } from './components/nav-bar-mobile/nav-bar-mobile.component';
 import { HomeInnerComponent } from './components/home-inner/home-inner.component';
 import { ThemeToggleComponent } from './components/theme-toggle/theme-toggle.component';
+import { ScrollToTopComponent } from './components/scroll-to-top/scroll-to-top.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { ThemeToggleComponent } from './components/theme-toggle/theme-toggle.com
     NavBarMobileComponent,
     HomeInnerComponent,
     ThemeToggleComponent,
+    ScrollToTopComponent,
   ],
   imports: [
     BrowserModule
