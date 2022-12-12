@@ -18,6 +18,7 @@ import { NavBarMobileComponent } from './components/nav-bar-mobile/nav-bar-mobil
 import { HomeInnerComponent } from './components/home-inner/home-inner.component';
 import { ThemeToggleComponent } from './components/theme-toggle/theme-toggle.component';
 import { CardProjectComponent } from './components/projects-container/card-project/card-project.component';
+import { ScrollToTopComponent } from './components/scroll-to-top/scroll-to-top.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { CardProjectComponent } from './components/projects-container/card-proje
     HomeInnerComponent,
     ThemeToggleComponent,
     CardProjectComponent,
+    ScrollToTopComponent,
   ],
   imports: [
     BrowserModule
