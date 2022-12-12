@@ -4,4 +4,5 @@ export interface workExperienceData {
     endDate: string;
     description: string;
     local: string;
+    link?: string;
 }

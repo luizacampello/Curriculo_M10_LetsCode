@@ -4,12 +4,22 @@
         <h2>Experiências</h2>
         <ul class="timeline">
             <li *ngFor="let workExperience of workExperienceArray">
-                <a target="_blank" href="https://www.totoprayogo.com/#"><h3>{{workExperience.name}}</h3></a>
-                <p class="mb-0 font-weight-lighter">{{workExperience.local}} | {{workExperience.beginDate}} - {{workExperience.endDate}}</p>
-                <p class="mb-0">{{workExperience.description}}</p>
+              <div *ngIf="workExperience.link; else emptyLink">
+                <a target="_blank" href="{{workExperience.link}}">
+                  <h3>{{workExperience.name}}</h3>
+                </a>
+              </div>
+
+              <ng-template #emptyLink>
+                <h3>{{workExperience.name}}</h3>
+              </ng-template>
+
+              <p class="mb-0 font-weight-lighter">{{workExperience.local}} | {{workExperience.beginDate}} - {{workExperience.endDate}}</p>
+              <p class="mb-0">{{workExperience.description}}</p>
             </li>
         </ul>
       </div>
     </div>
 </div>
+
 
