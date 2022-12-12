@@ -92,6 +92,13 @@
       "link": "https://github.com/luizacampello",
       "image": "../assets/images/avatar.jpg",
       "category": "back"
+    },
+    {
+      "title": "Teste 3",
+      "desc": "Nesse projeto a gnt fez muita coisaasdasdasd",
+      "link": "https://github.com/luizacampello",
+      "image": "../assets/images/avatar.jpg",
+      "category": "design"
     }
   ]
 }

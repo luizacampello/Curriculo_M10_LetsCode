@@ -38,8 +38,4 @@ export class ContentService {
   getCardsArray(): cardContent[] {
     return this.projectCardsArray;
   }
-
-
 }
-
-

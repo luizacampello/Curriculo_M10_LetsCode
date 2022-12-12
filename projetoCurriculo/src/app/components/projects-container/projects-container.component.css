@@ -7,7 +7,7 @@ app-projects-container{
 .projectCards{
     width: 100%;
     display: flex;
-    justify-content: cen;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
