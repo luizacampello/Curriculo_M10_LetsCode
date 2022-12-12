@@ -11,6 +11,8 @@ export class LanguagesComponent {
 
   public languagesArray : Array<languageData> = [];
 
+  public detailsSign = "plus-lg";
+
   constructor (private contentService: ContentService) {}
 
   ngOnInit(): void {
@@ -21,4 +23,11 @@ export class LanguagesComponent {
     this.languagesArray = this.contentService.getlanguagesArray();
   }
 
+  languageToggleEvent(event: any): void {
+    if (event.target.open) {
+      this.detailsSign = "dash-lg";
+    } else {
+      this.detailsSign = "plus-lg";
+    }
+  }
 }
