@@ -77,5 +77,21 @@
       "name": "Espanhol",
       "level": "Intermediário"
     }
+  ],
+  "cardsContent" : [
+    {
+      "title": "Teste",
+      "desc": "Nesse projeto a gnt fez muita coisa",
+      "link": "https://github.com/luizacampello",
+      "image": "../assets/images/avatar.jpg",
+      "category": "front"
+    },
+    {
+      "title": "Teste 2 ",
+      "desc": "Nesse projeto a gnt fez muita coisaasdasdasd",
+      "link": "https://github.com/luizacampello",
+      "image": "../assets/images/avatar.jpg",
+      "category": "back"
+    }
   ]
 }

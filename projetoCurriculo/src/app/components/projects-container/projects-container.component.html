@@ -1,1 +1,13 @@
-<p>projects-container works!</p>
+<div class="container">
+    <h1>Projetos</h1>
+    <div class="filter">
+        <button>All</button>
+        <button>Front-end</button>
+        <button>Back-end</button>
+    </div>
+    <div class="d-flex flex-row">
+        <div class="projectCards" *ngFor="let card of cardsArray">
+            <app-card-project [cardData]= "card" ></app-card-project>
+        </div>
+    </div>
+</div>
