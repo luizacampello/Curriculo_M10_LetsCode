@@ -105,34 +105,35 @@
       "progress": 0.75
     }
   ],
+  
   "cardsContent" : [
     {
-      "title": "Teste",
+      "title": "Lá na Land",
       "desc": "Nesse projeto a gnt fez muita coisa",
       "link": "https://github.com/luizacampello",
-      "image": "../assets/images/avatar.jpg",
+      "image": "../assets/images/laNaLand.jpg",
       "category": "front-end"
     },
     {
-      "title": "Teste 2 ",
-      "desc": "Nesse projeto a gnt fez muita coisaasdasdasd",
+      "title": "API Eventos",
+      "desc": "Módulo API",
       "link": "https://github.com/luizacampello",
-      "image": "../assets/images/avatar.jpg",
+      "image": "../assets/images/apiEventos.jpg",
       "category": "back-end"
     },
     {
-      "title": "Teste 3",
+      "title": "Shopping Coders",
       "desc": "Nesse projeto a gnt fez muita coisaasdasdasd",
       "link": "https://github.com/luizacampello",
-      "image": "../assets/images/avatar.jpg",
-      "category": "design"
+      "image": "../assets/images/logoShopping.png",
+      "category": "front-end"
     },
     {
-      "title": "Teste 4",
+      "title": "Portfolio Cinematografico BD",
       "desc": "Nesse projeto a gnt fez muita coisaasdasdasd",
       "link": "https://github.com/luizacampello",
-      "image": "../assets/images/avatar.jpg",
-      "category": "design"
+      "image": "../assets/images/portfolioCinema.jpg",
+      "category": "banco"
     }
   ]
 }
