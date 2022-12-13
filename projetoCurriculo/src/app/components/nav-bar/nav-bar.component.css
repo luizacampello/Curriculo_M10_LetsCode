@@ -2,8 +2,10 @@
 .floating-menu {
   z-index: 999;
   left: 0;
+  width:10%;
   position: fixed;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -12,8 +14,7 @@
 
 .main-menu {
   list-style: none;
-  padding-left: 1rem;
-  text-decoration: none;
+  padding:0;
 }
 
 .navPages{
@@ -22,6 +23,8 @@
   width: 3.5rem;
   height: 3.5rem;
   background-color: var(--secondary-color);
+  color: var(--text-dark-color);
+  font-size: 1.2rem;
   text-align: center;
   align-items: center;
   justify-content: center;
