@@ -1,0 +1,33 @@
+.img-container {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.backgroundImg{
+    z-index: -1;
+    min-width: 100vw;
+    max-height: 100vh;
+
+}
+
+.color-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+.homeBox{
+    position: relative;
+    z-index: 2;
+    min-width: 100vw;
+    max-height: 100vh;
+}
+
+
+
