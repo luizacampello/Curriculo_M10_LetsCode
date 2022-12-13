@@ -1,8 +1,11 @@
-.container{
-    justify-content: space-between;
+.skillContainer{
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: space-between;
 }
-
-.skills-box {
+.skill-box {
     width: 48%;
 }
 
