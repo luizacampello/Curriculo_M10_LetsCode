@@ -1,17 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { NavBarComponent } from './nav-bar.component';
 
-describe('NavBarComponent', () => {
-  let component: NavBarComponent;
-  let fixture: ComponentFixture<NavBarComponent>;
+import { ScrollToTopComponent } from './scroll-to-top.component';
+
+describe('ScrollToTopComponent', () => {
+  let component: ScrollToTopComponent;
+  let fixture: ComponentFixture<ScrollToTopComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NavBarComponent ]
+      declarations: [ ScrollToTopComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(NavBarComponent);
+    fixture = TestBed.createComponent(ScrollToTopComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

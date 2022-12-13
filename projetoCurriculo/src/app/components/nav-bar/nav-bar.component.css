@@ -1,0 +1,36 @@
+
+.floating-menu {
+  z-index: 999;
+  left: 0;
+  width:10%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.main-menu {
+  list-style: none;
+  padding:0;
+}
+
+.navPages{
+  display:flex;
+  margin-top: 0.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: var(--secondary-color);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+}
+
+.main-menu li a:hover, .active {
+  background: #57dcbe;
+  color: #ffffff;
+}
+

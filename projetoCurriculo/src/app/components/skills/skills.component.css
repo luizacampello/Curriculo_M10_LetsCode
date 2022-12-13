@@ -1,0 +1,19 @@
+.skillContainer{
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: space-between;
+}
+.skill-box {
+    width: 48%;
+}
+
+.progress-bar {
+    background-color: var(--primary-color);
+}
+
+.value {
+    float: right;
+    font-style: normal;
+}

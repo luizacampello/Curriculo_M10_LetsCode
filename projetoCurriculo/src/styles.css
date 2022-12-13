@@ -53,3 +53,5 @@ body.bootstrap ul.timeline > li:before {
 body.bootstrap-dark ul.timeline > li:before {
   background: var(--bg-dark-color);
 }
+
+
