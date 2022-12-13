@@ -1,0 +1,95 @@
+.card {
+  display: flex;
+  margin: auto;
+  border: none;
+  width: 80%;
+}
+
+.card details,
+.card .infoWithoutDescription {
+  display: flex;
+  border-radius: 5px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.05);
+  border-left: 15px solid gray;
+  padding: 15px;
+}
+
+.card details,
+.card .infoWithoutDescription {
+  margin-top: 15px;
+}
+
+.card details.info,
+.card .infoWithoutDescription {
+  border-left-color: var(--primary-color);
+}
+
+.card details summary,
+.card .infoWithoutDescription .fakeSummary {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: flex-start;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  padding: 16px;
+}
+.card details p {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: flex-start;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  padding: 2px;
+}
+
+.card details summary,
+.card details p,
+.card details summary::before {
+  cursor: pointer;
+}
+
+.card details summary::-webkit-details-marker,
+.card details p::-webkit-details-marker {
+  display: none;
+}
+
+.card summary:hover {
+  outline: solid 3px var(--primary-color);
+}
+
+.card details summary::selection,
+.card details p::selection,
+.card .infoWithoutDescription::selection {
+  background-color: var(--primary-color);
+}
+
+.card details p {
+  display: list-item;
+  cursor: default;
+  margin-left: 3rem;
+}
+
+.card details summary::before,
+.card .infoWithoutDescription h3::before {
+  position: absolute;
+  display: inline-flex;
+  width: 1rem;
+  height: 1rem;
+  left: 0rem;
+  margin-right: 0.5rem;
+}
+
+.card details[open] summary h3 {
+  font-weight: 700;
+}
+
+.card details[open] summary::before {
+  transform: rotate(45deg);
+}

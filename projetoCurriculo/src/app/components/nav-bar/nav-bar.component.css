@@ -1,5 +1,6 @@
 
 .floating-menu {
+  z-index: 999;
   left: 0;
   position: fixed;
   display: inline-block;
@@ -14,7 +15,7 @@
   padding-left: 1rem;
 }
 
-.main-menu li a {
+.navPages{
   display: block;
   margin-top: 0.5rem ;
   padding: 1rem;
@@ -23,9 +24,8 @@
   border-radius: 100%;
 }
 
-.main-menu li a:hover {
+.main-menu li a:hover, .active {
   background: #57dcbe;
   color: #ffffff;
 }
-
 

@@ -1,27 +1,65 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
-    --primary-color: #57DCBE;
-    --secondary-color: #D9D9D9;
-    --bg-light-color: #F9F9F9;
-    --bg-dark-color: #343a40;
-    --text-light-color: #F9F9F9;
-    --text-dark-color: #343a40;
-    --heading-color: #292922;
+  --primary-color: #57dcbe;
+  --secondary-color: #d9d9d9;
+  --bg-light-color: #f9f9f9;
+  --bg-dark-color: #343a40;
+  --text-light-color: #f9f9f9;
+  --text-dark-color: #343a40;
+  --footer-light-color: #eaeaea;
+  --footer-dark-color: #2c2c2c;
+  --heading-color: #292922;
 }
 
-body.bootstrap {
-    background-color: var(--bg-light-color);
- }
-
-body.bootstrap h1, body.bootstrap h2, body.bootstrap-dark h1, body.bootstrap-dark h2{
-    color: var(--primary-color)
+body.bootstrap,
+body.bootstrap .card {
+  background-color: var(--bg-light-color);
 }
- body.bootstrap p, body.bootstrap h3, body.bootstrap h4, body.bootstrap h5, body.bootstrap h6, body.bootstrap a {
-    color: var(--text-dark-color);
- }
-  body.bootstrap-dark {
-    background-color: var(--bg-dark-color);
- }
-  body.bootstrap-dark p, body.bootstrap-dark h3, body.bootstrap-dark h4, body.bootstrap-dark h5, body.bootstrap-dark h6, body.bootstrap-dark a{
-    color: var(--text-light-color);
- }
+
+body.bootstrap h1,
+body.bootstrap h2,
+body.bootstrap-dark h1,
+body.bootstrap-dark h2 {
+  color: var(--primary-color);
+}
+
+body.bootstrap p,
+body.bootstrap h3,
+body.bootstrap h4,
+body.bootstrap h5,
+body.bootstrap h6,
+body.bootstrap a {
+  color: var(--text-dark-color);
+}
+
+body.bootstrap-dark,
+body.bootstrap-dark .card {
+  background-color: var(--bg-dark-color);
+}
+
+body.bootstrap-dark p,
+body.bootstrap-dark h3,
+body.bootstrap-dark h4,
+body.bootstrap-dark h5,
+body.bootstrap-dark h6,
+body.bootstrap-dark a {
+  color: var(--text-light-color);
+}
+
+body.bootstrap ul.timeline > li:before {
+  background: var(--bg-light-color);
+}
+
+body.bootstrap-dark ul.timeline > li:before {
+  background: var(--bg-dark-color);
+}
+
+.bootstrap .container{
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  padding: none;
+  padding-right:0%;
+  padding-left:0%;
+}

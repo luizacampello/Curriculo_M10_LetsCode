@@ -1,0 +1,108 @@
+{
+  "socialMedia": [
+    {
+      "name": "github",
+      "link": "https://github.com/luizacampello"
+    },
+    {
+      "name": "instagram",
+      "link": "https://www.instagram.com/lmcampello/"
+    },
+    {
+      "name": "linkedin",
+      "link": "https://www.linkedin.com/in/luizacampello/"
+    }
+  ],
+
+  "workExperience": [
+    {
+      "name": "Github",
+      "beginDate": "Janeiro-2020",
+      "endDate": "Atualmente",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis.",
+      "local": "Canada"
+    },
+    {
+      "name": "Google",
+      "beginDate": "Dezembro-2016",
+      "endDate": "Outubro-2019",
+      "description": "Lorem ipsum dolor elementum lorem ornare sit amet, consectetur adipiscing elit. Quisque scelerisque adipiscing diam non nisi semper. Maecenas facilisis placerat, facilisis mollis.",
+      "local": "Belo Horizonte-MG",
+      "link": "https://www.google.com/"
+    },
+    {
+        "name": "Microsoft",
+        "beginDate": "Dezembro-2016",
+        "endDate": "Outubro-2015",
+        "description": "Lorem ipsum dolor elementum lorem ornare sit amet, consectetur adipiscing elit. Quisque scelerisque adipiscing diam non nisi semper. Maecenas facilisis placerat, facilisis mollis.",
+        "local": "Varginha-MG",
+        "link": "https://www.google.com/"
+      }
+  ],
+
+  "educationExperience": [
+    {
+      "courseName": "Geologia",
+      "degree": "Graduação",
+      "beginDate": "Março-2014",
+      "endDate": "Dezembro-2020",
+      "local": "Universidade de Brasilia"
+    },
+    {
+      "courseName": "Processamento de imagens de Satélite",
+      "degree": "Mestrado",
+      "beginDate": "Janeiro-2021",
+      "endDate": "Atualmente",
+      "local": "PPGGAG - Universidade de Brasilia"
+    }
+  ],
+
+  "languages": [
+    {
+      "id": "EN",
+      "name": "Inglês",
+      "level": "Avançado"
+    },
+    {
+      "id": "FR",
+      "name": "Francês",
+      "level": "Básico",
+      "description": [
+        "TCF TP – Tout Public",
+        "Intercâmbio de 2 meses na escola Le Cordon Bleu"
+      ]
+    },
+    {
+      "id": "ESP",
+      "name": "Espanhol",
+      "level": "Intermediário"
+    }
+  ],
+
+  "skills": [
+    {
+      "name": "C#",
+      "progress": 0.95
+    },
+    {
+      "name": "SQL",
+      "progress": 0.90
+    },
+    {
+      "name": "HTML",
+      "progress": 0.80
+    },
+    {
+      "name": "CSS",
+      "progress": 0.85
+    },
+    {
+      "name": "Javascript",
+      "progress": 0.88
+    },
+    {
+      "name": "Angular",
+      "progress": 0.75
+    }
+  ]
+}

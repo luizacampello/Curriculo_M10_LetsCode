@@ -1,14 +1,11 @@
 <app-nav-bar></app-nav-bar>
 
-<div data-bs-spy="scroll" data-bs-target="#navBar">
-  <app-home-container
-    [socialMediaArray]="socialMediaArray"
-    id="homeContainer"
-  ></app-home-container>
+<div data-bs-spy="scroll" data-bs-target="#navBar" style="position: relative;">
+  <app-home-container id="homeContainer"></app-home-container>
   <app-about-me-container id="aboutMeContainer"></app-about-me-container>
   <app-experience-container id="experienceContainer"></app-experience-container>
   <app-projects-container id="projectsContainer"></app-projects-container>
   <app-contact-form-container id="contactFormContainer"></app-contact-form-container>
 </div>
 
-<app-footer [socialMediaArray]="socialMediaArray"></app-footer>
+<app-footer ></app-footer>
