@@ -111,14 +111,14 @@
       "desc": "Nesse projeto a gnt fez muita coisa",
       "link": "https://github.com/luizacampello",
       "image": "../assets/images/avatar.jpg",
-      "category": "front"
+      "category": "front-end"
     },
     {
       "title": "Teste 2 ",
       "desc": "Nesse projeto a gnt fez muita coisaasdasdasd",
       "link": "https://github.com/luizacampello",
       "image": "../assets/images/avatar.jpg",
-      "category": "back"
+      "category": "back-end"
     },
     {
       "title": "Teste 3",
