@@ -104,5 +104,35 @@
       "name": "Angular",
       "progress": 0.75
     }
+  ],
+  "cardsContent" : [
+    {
+      "title": "Teste",
+      "desc": "Nesse projeto a gnt fez muita coisa",
+      "link": "https://github.com/luizacampello",
+      "image": "../assets/images/avatar.jpg",
+      "category": "front"
+    },
+    {
+      "title": "Teste 2 ",
+      "desc": "Nesse projeto a gnt fez muita coisaasdasdasd",
+      "link": "https://github.com/luizacampello",
+      "image": "../assets/images/avatar.jpg",
+      "category": "back"
+    },
+    {
+      "title": "Teste 3",
+      "desc": "Nesse projeto a gnt fez muita coisaasdasdasd",
+      "link": "https://github.com/luizacampello",
+      "image": "../assets/images/avatar.jpg",
+      "category": "design"
+    },
+    {
+      "title": "Teste 4",
+      "desc": "Nesse projeto a gnt fez muita coisaasdasdasd",
+      "link": "https://github.com/luizacampello",
+      "image": "../assets/images/avatar.jpg",
+      "category": "design"
+    }
   ]
 }
