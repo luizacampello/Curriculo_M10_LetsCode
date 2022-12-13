@@ -44,7 +44,7 @@ export class ProjectsContainerComponent {
     const id = event.target.id;
     this.activateButton(id);
 
-    if(id == "All"){
+    if(id == "ALL"){
       this.cardsArrayFiltered = this.cardsArray;
     }
     else {
