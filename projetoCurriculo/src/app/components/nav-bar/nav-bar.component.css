@@ -13,19 +13,42 @@
 .main-menu {
   list-style: none;
   padding-left: 1rem;
+  text-decoration: none;
 }
 
 .navPages{
-  display: block;
-  margin-top: 0.5rem ;
-  padding: 1rem;
-  background-color: #d9d9d9;
-  color: #231f20;
+  display:flex;
+  margin-top: 0.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: var(--secondary-color);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
   border-radius: 100%;
 }
 
-.main-menu li a:hover, .active {
+.active {
   background: #57dcbe;
   color: #ffffff;
 }
+
+.navPages:hover{
+  background: #57dcbe;
+  color: #ffffff;
+  width: 8rem;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+.pageName{
+  display: none;
+  text-indent: 8px;
+  font-size: 1rem;
+}
+
+.navPages:hover > .pageName{
+  display: inline-block;
+}
+
 
