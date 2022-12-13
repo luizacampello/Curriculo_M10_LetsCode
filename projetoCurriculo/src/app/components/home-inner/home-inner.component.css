@@ -1,0 +1,9 @@
+.intro{
+    z-index: 1;
+    margin:auto;
+    display:flex;
+    flex-direction: column;
+    vertical-align: middle;
+    width: 80%;
+    padding-top: 10%;
+}

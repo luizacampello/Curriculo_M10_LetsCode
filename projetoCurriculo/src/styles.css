@@ -12,7 +12,8 @@
 }
 
 body.bootstrap,
-body.bootstrap .card {
+body.bootstrap .card,
+body.bootstrap .color-overlay{
   background-color: var(--bg-light-color);
 }
 
@@ -33,7 +34,8 @@ body.bootstrap a {
 }
 
 body.bootstrap-dark,
-body.bootstrap-dark .card {
+body.bootstrap-dark .card,
+body.bootstrap-dark .color-overlay {
   background-color: var(--bg-dark-color);
 }
 
