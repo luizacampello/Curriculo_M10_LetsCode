@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./home-inner.component.css']
 })
 export class HomeInnerComponent {
+  nome = "Luiza Motta Campello";
 
 }

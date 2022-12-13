@@ -13,7 +13,7 @@
 
 body.bootstrap,
 body.bootstrap .card,
-body.bootstrap .inner {
+body.bootstrap .color-overlay{
   background-color: var(--bg-light-color);
 }
 
@@ -35,7 +35,7 @@ body.bootstrap a {
 
 body.bootstrap-dark,
 body.bootstrap-dark .card,
-body.bootstrap-dark .inner {
+body.bootstrap-dark .color-overlay {
   background-color: var(--bg-dark-color);
 }
 
@@ -56,4 +56,10 @@ body.bootstrap-dark ul.timeline > li:before {
   background: var(--bg-dark-color);
 }
 
-
+.textBox{
+  width: 80%;
+  margin: 2% auto;
+}
+.textBox p{
+  text-indent: 1.5rem;
+}
