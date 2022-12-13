@@ -9,10 +9,9 @@ import { ContentService } from 'src/app/services/content.service';
 })
 
 export class ProjectsContainerComponent {
-  @Input() public activeId = "All";
   public cardsArray : Array<cardContent> = [];
   public cardsArrayFiltered : Array<cardContent> = [];
-  public categoryArray : Array<string> = ["All"];
+  public categoryArray : Array<string> = ["ALL"];
 
   constructor (private contentService: ContentService, private renderer: Renderer2) {}
 
@@ -20,12 +19,10 @@ export class ProjectsContainerComponent {
     this.getCardsArray();
     this.generateCategoryList();
     this.cardsArrayFiltered = this.cardsArray;
-
   }
 
   ngAfterViewInit(): void {
-    this.activateButton("All");
-
+    this.activateButton("ALL");
   }
 
   getCardsArray(): void {
@@ -35,11 +32,11 @@ export class ProjectsContainerComponent {
   generateCategoryList(): void {
     this.cardsArray.forEach(element => {
       let categoryText = element.category;
-      const text = categoryText.charAt(0).toUpperCase() + categoryText.slice(1);
-    if(!this.categoryArray.includes(text)){
-      this.categoryArray.push(text)
-    }
-  });
+      const text = categoryText.toUpperCase();
+      if(!this.categoryArray.includes(text)){
+        this.categoryArray.push(text)
+      }
+    });
   }
 
   filterList(event: any){
@@ -51,7 +48,7 @@ export class ProjectsContainerComponent {
       this.cardsArrayFiltered = this.cardsArray;
     }
     else {
-      this.cardsArrayFiltered = this.cardsArray.filter( e => e.category == id.toLowerCase())
+      this.cardsArrayFiltered = this.cardsArray.filter( e => e.category.toUpperCase() == id.toUpperCase())
     }
   }
 
@@ -67,8 +64,4 @@ export class ProjectsContainerComponent {
       button.classList.add("selected");
     }
   }
-
-
-
-
 }
