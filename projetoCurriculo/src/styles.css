@@ -56,4 +56,10 @@ body.bootstrap-dark ul.timeline > li:before {
   background: var(--bg-dark-color);
 }
 
-
+.textBox{
+  width: 80%;
+  margin: 2% auto;
+}
+.textBox p{
+  text-indent: 1.5rem;
+}
