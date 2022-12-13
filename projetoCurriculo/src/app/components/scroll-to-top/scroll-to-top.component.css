@@ -10,4 +10,12 @@
     transition: all .2s ease-in-out;
    }
 
+.bi.bi-arrow-up-circle-fill{
+    color:var(--secondary-color);
+    font-size: 3rem;
+}
+
+.bi.bi-arrow-up-circle-fill:hover{
+    color:var(--primary-color);
+}
 
