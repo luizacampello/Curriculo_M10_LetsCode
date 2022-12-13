@@ -1,6 +1,6 @@
 <h2>Habilidades</h2>
-<div class="skillContainer">
-    <div class="skill-box" *ngFor="let skill of skillsData">
+<div class="container">
+    <div class="skills-box" *ngFor="let skill of skillsData">
         <span>
             {{ skill.name }}
             <i class="value">{{ skill.progress | percent: '1.0' }}</i>

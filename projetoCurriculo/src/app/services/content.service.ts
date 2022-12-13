@@ -5,7 +5,6 @@ import { workExperienceData } from '../models/workExperience-data.model';
 import { languageData } from '../models/language-data.model';
 import content from '../../content/content.json';
 import { SkillsData } from '../models/skills-data.model';
-import { cardContent } from '../models/card-content.model';
 
 @Injectable({
   providedIn: 'root'
@@ -19,7 +18,6 @@ export class ContentService {
   socialMediaArray : Array<socialMediaData> = content.socialMedia;
   languagesArray : Array<languageData> = content.languages;
   skillsArray: Array<SkillsData> = content.skills;
-  projectCardsArray : Array<cardContent> = content.cardsContent;
 
   getWorkExperienceArray(): workExperienceData[] {
     return this.workExperienceArray;
@@ -41,7 +39,6 @@ export class ContentService {
     return this.skillsArray;
   }
 
-  getCardsArray(): cardContent[] {
-    return this.projectCardsArray;
-  }
 }
+
+
