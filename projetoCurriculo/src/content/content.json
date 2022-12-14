@@ -134,6 +134,13 @@
       "link": "https://github.com/luizacampello",
       "image": "../assets/images/portfolioCinema.jpg",
       "category": "Banco de Dados"
+    },
+    {
+      "title": "Portfolio Cinematografico BD",
+      "desc": "Nesse projeto a gnt fez muita coisaasdasdasd",
+      "link": "https://github.com/luizacampello",
+      "image": "none",
+      "category": "Banco de Dados"
     }
   ]
 }

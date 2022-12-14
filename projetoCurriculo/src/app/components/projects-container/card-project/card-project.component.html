@@ -2,7 +2,7 @@
 <a href="{{ cardData.link }}" target="_blank" rel="noopener noreferrer"> asd asd as</a>
   <div class="flip-card-inner">
     <div class="flip-card-front">
-      <img src="{{ cardData.image }}" alt="Avatar" style="width:300px;height:300px;">
+      <img src="{{ cardData.image }}" alt="Avatar" style="width:300px;height:300px;" (load)="hasLoaded()">
     </div>
     <div class="flip-card-back">
       <h3> {{ cardData.title }} </h3>
