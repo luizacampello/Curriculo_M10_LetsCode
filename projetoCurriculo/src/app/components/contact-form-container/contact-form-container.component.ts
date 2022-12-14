@@ -35,4 +35,5 @@ export class ContactFormContainerComponent {
 
   get message() { return this.form.get('message')!; };
 
+  public id: string = "contactFormContainer";
 }
