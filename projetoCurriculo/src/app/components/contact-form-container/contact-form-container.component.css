@@ -23,6 +23,7 @@ input[type="email"] {
   border: none;
   border-radius: 0%;
   border-bottom: 2px solid var(--secondary-color);
+  margin-left: 0.6rem;
 }
 
 .wrapper {
@@ -55,6 +56,9 @@ h3 {
   transition: all 0.2s ease;
   transform-origin: 0 0;
   cursor: text;
+}
+#inputLabelEmail{
+  text-indent: 8px;
 }
 
 .form-group span.border {
@@ -90,7 +94,7 @@ h3 {
 
 .form-control:focus + span + .border,
 .form-control:valid + span + .border {
-  transform: scaleX(1);
+  transform: scaleX(1rem);
   border-bottom: 2px solid var(--primary-color);
 }
 

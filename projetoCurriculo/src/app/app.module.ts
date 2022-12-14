@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HomeContainerComponent } from './components/home-container/home-container.component';
@@ -18,6 +19,7 @@ import { HomeInnerComponent } from './components/home-inner/home-inner.component
 import { ThemeToggleComponent } from './components/theme-toggle/theme-toggle.component';
 import { CardProjectComponent } from './components/projects-container/card-project/card-project.component';
 import { ScrollToTopComponent } from './components/scroll-to-top/scroll-to-top.component';
+
 
 @NgModule({
   declarations: [
@@ -40,7 +42,8 @@ import { ScrollToTopComponent } from './components/scroll-to-top/scroll-to-top.c
     ScrollToTopComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

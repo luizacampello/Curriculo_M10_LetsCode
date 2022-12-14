@@ -3,29 +3,29 @@
 
     <h2 class="py-3">Send me a message!</h2>
 
-  <form>
+  <form [formGroup]="form" id="form">
     <div class="form-row">
       <label class="form-group col-md-6" for="inputNome">
-        <input type="text" class="form-control" id="inputNome" required />
-        <span for=""><h4>Nome</h4></span>
+        <input type="text" class="form-control" id="inputNome" formControlName="name" required />
+        <span for="inputNome" id="inputLabelName"><h4>Nome</h4></span>
         <span class="border"></span>
       </label>
 
       <label class="form-group col-md-6">
-        <input type="text" class="form-control" id="inputEmail" required />
-        <span for=""><h4>Email</h4></span>
+        <input type="email" class="form-control" id="inputEmail" formControlName="email" required />
+        <span for="inputEmail" id="inputLabelEmail"><h4>Email</h4></span>
         <span class="border"></span>
       </label>
     </div>
 
     <label class="form-group">
-      <input type="text" class="form-control" id="inputMensagem" required />
-      <span for=""><h4>Mensagem</h4></span>
+      <input type="text" class="form-control" id="inputMensagem" formControlName="message" required />
+      <span for="inputMensagem" id="inputLabelMessage"><h4>Mensagem</h4></span>
       <span class="border"></span>
     </label>
 
     <div class = "m-auto w-50">
-      <button type="submit" class="btn btn-outline-info btn-block">Send</button>
+      <button type="submit" class="btn btn-outline-info btn-block" (click)="submitForm()">Send</button>
     </div>
 
   </form>
