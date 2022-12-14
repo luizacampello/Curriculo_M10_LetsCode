@@ -1,5 +1,5 @@
 import { cardContent } from './../../models/card-content.model';
-import { Component, Input, Renderer2 } from '@angular/core';
+import { Component, Renderer2 } from '@angular/core';
 import { ContentService } from 'src/app/services/content.service';
 
 @Component({
@@ -12,6 +12,7 @@ export class ProjectsContainerComponent {
   public cardsArray : Array<cardContent> = [];
   public cardsArrayFiltered : Array<cardContent> = [];
   public categoryArray : Array<string> = ["ALL"];
+  public id : string = "projectsContainer";
 
   constructor (private contentService: ContentService, private renderer: Renderer2) {}
 
@@ -40,7 +41,6 @@ export class ProjectsContainerComponent {
   }
 
   filterList(event: any){
-
     const id = event.target.id;
     this.activateButton(id);
 
@@ -53,7 +53,6 @@ export class ProjectsContainerComponent {
   }
 
   activateButton(id: string) {
-
     let disableButton = document.querySelector(".selected");
     if(disableButton !== null){
       disableButton.classList.remove("selected");

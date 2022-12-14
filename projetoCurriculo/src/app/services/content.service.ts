@@ -6,6 +6,7 @@ import { languageData } from '../models/language-data.model';
 import content from '../../content/content.json';
 import { SkillsData } from '../models/skills-data.model';
 import { cardContent } from '../models/card-content.model';
+import { TextContentData } from '../models/text-content-data.model';
 
 @Injectable({
   providedIn: 'root'
@@ -20,6 +21,7 @@ export class ContentService {
   languagesArray : Array<languageData> = content.languages;
   skillsArray: Array<SkillsData> = content.skills;
   projectCardsArray : Array<cardContent> = content.cardsContent;
+  TextContentData : Array<TextContentData> = content.textContentData;
 
   getWorkExperienceArray(): workExperienceData[] {
     return this.workExperienceArray;
@@ -44,4 +46,17 @@ export class ContentService {
   getCardsArray(): cardContent[] {
     return this.projectCardsArray;
   }
+
+  getTextBoxContentById(propertyId: string): TextContentData {
+    let TextBoxContent!: TextContentData;
+
+    this.TextContentData.forEach(textItem => {
+      if (textItem.id == propertyId) {
+        TextBoxContent = textItem;
+      }
+    });
+
+    return TextBoxContent;
+  }
 }
+

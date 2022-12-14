@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./experience-container.component.css']
 })
 export class ExperienceContainerComponent {
-
+  public id: string = "experienceContainer";
 }
