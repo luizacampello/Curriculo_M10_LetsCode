@@ -5,7 +5,7 @@
   width:10%;
   position: fixed;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -14,7 +14,7 @@
 
 .main-menu {
   list-style: none;
-  padding:0;
+  padding:1.5rem;
 }
 
 .navPages{
@@ -31,8 +31,27 @@
   border-radius: 100%;
 }
 
-.main-menu li a:hover, .active {
-  background: #57dcbe;
-  color: #ffffff;
+.active {
+  background: var(--primary-color);
+  color: var(--text-light-color);
 }
+
+.navPages:hover{
+  background: var(--primary-color);
+  color: var(--text-light-color);
+  width: 6.7rem;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+.pageName{
+  display: none;
+  text-indent: 8px;
+  font-size: 1rem;
+}
+
+.navPages:hover > .pageName{
+  display: inline-block;
+}
+
 
