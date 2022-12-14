@@ -58,6 +58,14 @@ body.bootstrap-dark ul.timeline > li:before {
   background: var(--bg-dark-color);
 }
 
+body.bootstrap-dark .color-overlay{
+  background: linear-gradient(rgba(255,255,255,0.1), var(--bg-dark-color));
+}
+
+body.bootstrap .color-overlay{
+  background: linear-gradient(rgba(255,255,255,0.5), var(--bg-light-color));
+}
+
 .textBox{
   width: 80%;
   margin: 2% auto;
