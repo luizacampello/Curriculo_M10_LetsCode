@@ -1,3 +1,4 @@
+import { TimelineData} from '../models/timeline-data.model';
 import { Injectable } from '@angular/core';
 import { educationExperienceData } from '../models/educationExperience-data.model';
 import { socialMediaData } from '../models/socialmedia-data.model';
@@ -22,7 +23,8 @@ export class ContentService {
   skillsArray: Array<SkillsData> = content.skills;
   projectCardsArray : Array<cardContent> = content.cardsContent;
   tWriterArray: Array<string> = content.tWriterContent;
-  TextContentData : Array<TextContentData> = content.textContentData;
+  textContentData : Array<TextContentData> = content.textContentData;
+  timelineDataArray : Array<TimelineData> = content.timelineData;
 
   getWorkExperienceArray(): workExperienceData[] {
     return this.workExperienceArray;
@@ -53,15 +55,37 @@ export class ContentService {
   }
 
   getTextBoxContentById(propertyId: string): TextContentData {
-    let TextBoxContent!: TextContentData;
+    let textBoxContent!: TextContentData;
 
-    this.TextContentData.forEach(textItem => {
+    this.textContentData.forEach(textItem => {
       if (textItem.id == propertyId) {
-        TextBoxContent = textItem;
+        textBoxContent = textItem;
       }
     });
 
-    return TextBoxContent;
+    return textBoxContent;
+  }
+
+  getTimelineInfo(timelineType: string ): TimelineData{
+    let timelineContent!: TimelineData;
+
+    this.timelineDataArray.forEach(element => {
+      if (element.id == timelineType) {
+        timelineContent = element;
+      }
+    });
+
+    return timelineContent;
+  }
+
+  getTimelines() : string[]{
+    console.log(this.timelineDataArray);
+    let timelines: string[] = [];
+    this.timelineDataArray.forEach(element => {
+        timelines.push(element.id)
+    });
+
+    return timelines;
   }
 }
 

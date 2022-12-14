@@ -19,6 +19,7 @@ import { ThemeToggleComponent } from './components/theme-toggle/theme-toggle.com
 import { CardProjectComponent } from './components/projects-container/card-project/card-project.component';
 import { ScrollToTopComponent } from './components/scroll-to-top/scroll-to-top.component';
 import { TextBoxComponent } from './components/text-box/text-box.component';
+import { VerticalTimelineComponent } from './components/vertical-timeline/vertical-timeline.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { TextBoxComponent } from './components/text-box/text-box.component';
     CardProjectComponent,
     ScrollToTopComponent,
     TextBoxComponent,
+    VerticalTimelineComponent,
   ],
   imports: [
     BrowserModule
