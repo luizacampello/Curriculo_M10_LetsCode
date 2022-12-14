@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact-form-container.component.css']
 })
 export class ContactFormContainerComponent {
-
+  public id: string = "contactFormContainer";
 }
