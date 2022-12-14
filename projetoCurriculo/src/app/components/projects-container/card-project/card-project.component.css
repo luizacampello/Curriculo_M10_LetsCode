@@ -54,7 +54,6 @@ div.flip-card a {
   .flip-card-front img{
     align-self:center;
     min-width: 100%;
-    /* min-height: 100%; */
     object-fit: cover;
   }
 
