@@ -1,3 +1,4 @@
+import { NONE_TYPE } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -19,10 +20,12 @@ export class HomeInnerComponent implements OnInit {
       loop: true,
       typeSpeed: 80,
       deleteSpeed: 80,
+      typeColor: 'none',
+      cursorColor: 'none'
     });
 
     writer
-      .changeTypeClass('teste')
+      .changeTypeClass('t-writer')
       .type('geóloga')
       .rest(500)
       .remove(7)
