@@ -136,6 +136,7 @@
       "category": "Banco de Dados"
     }
   ],
+
   "tWriterContent": ["geóloga", "programadora", "louca por gatinhos"],
 
   "textContentData": [
@@ -185,6 +186,67 @@
       "title": "Envie uma Mensagem!",
       "subTitle": "",
       "text": []
+    }
+  ],
+
+  "timelineData":[
+    {
+      "id": "educationExperiences",
+      "title": "Educação",
+      "timelineElements": [
+        {
+          "name": "Ciência da Computação",
+          "type": "Graduação",
+          "beginDate": "jan/2016",
+          "endDate": "jun/2021",
+          "description": [],
+          "local": "Brasília-DF",
+          "link": ""
+        },
+        {
+          "name": "Sistemas Distribuídos",
+          "type": "Mestrado",
+          "beginDate": "jan/2016",
+          "endDate": "em andamento",
+          "description": [],
+          "local": "Brasília-DF",
+          "link": "https://www.cic.unb.br/"
+        }
+      ]
+    },
+
+    {
+      "id": "workExperiences",
+      "title": "Experiências",
+      "timelineElements": [
+        {
+          "name": "Google",
+          "type": "Estágio",
+          "beginDate": "mar/2018",
+          "endDate": "mar/2020",
+          "description": ["Equipe responsável pelo desenvolvimento e aprimoramento do algoritmo de busca", "Participação no Summit 2019 em Los Angeles"],
+          "local": "Remoto",
+          "link": "https://www.google.com/"
+        },
+        {
+          "name": "Alura",
+          "type": "Estágio",
+          "beginDate": "abril/2020",
+          "endDate": "maio/2021",
+          "description": ["Estágio em Front-end | Angular"],
+          "local": "Remoto",
+          "link": "https://www.alura.com.br/"
+        },
+        {
+          "name": "Microsoft",
+          "type": "Estágio",
+          "beginDate": "julho/2021",
+          "endDate": "atualmente",
+          "description": [],
+          "local": "Canada",
+          "link": ""
+        }
+      ]
     }
   ]
 }
