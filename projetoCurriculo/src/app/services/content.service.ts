@@ -20,6 +20,7 @@ export class ContentService {
   languagesArray : Array<languageData> = content.languages;
   skillsArray: Array<SkillsData> = content.skills;
   projectCardsArray : Array<cardContent> = content.cardsContent;
+  tWriterArray: Array<string> = content.tWriterContent;
 
   getWorkExperienceArray(): workExperienceData[] {
     return this.workExperienceArray;
@@ -43,5 +44,9 @@ export class ContentService {
 
   getCardsArray(): cardContent[] {
     return this.projectCardsArray;
+  }
+
+  getTWriterArray(): string[] {
+    return this.tWriterArray;
   }
 }
