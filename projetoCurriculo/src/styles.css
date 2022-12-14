@@ -29,7 +29,8 @@ body.bootstrap h3,
 body.bootstrap h4,
 body.bootstrap h5,
 body.bootstrap h6,
-body.bootstrap a {
+body.bootstrap a,
+body.bootstrap span.t-writer {
   color: var(--text-dark-color);
 }
 
@@ -44,7 +45,8 @@ body.bootstrap-dark h3,
 body.bootstrap-dark h4,
 body.bootstrap-dark h5,
 body.bootstrap-dark h6,
-body.bootstrap-dark a {
+body.bootstrap-dark a,
+body.bootstrap-dark span.t-writer {
   color: var(--text-light-color);
 }
 
@@ -62,4 +64,8 @@ body.bootstrap-dark ul.timeline > li:before {
 }
 .textBox p{
   text-indent: 1.5rem;
+}
+
+.t-writer {
+  font-weight: bold;
 }
