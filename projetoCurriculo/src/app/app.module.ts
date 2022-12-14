@@ -11,8 +11,6 @@ import { ExperienceContainerComponent } from './components/experience-container/
 import { SociaLMediaComponent } from './components/social-media/social-media.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { LanguagesComponent } from './components/languages/languages.component';
-import { WorkExperiencesComponent } from './components/work-experiences/work-experiences.component';
-import { EducationExperiencesComponent } from './components/education-experiences/education-experiences.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { HomeInnerComponent } from './components/home-inner/home-inner.component';
 import { ThemeToggleComponent } from './components/theme-toggle/theme-toggle.component';
@@ -33,8 +31,6 @@ import { VerticalTimelineComponent } from './components/vertical-timeline/vertic
     SociaLMediaComponent,
     SkillsComponent,
     LanguagesComponent,
-    WorkExperiencesComponent,
-    EducationExperiencesComponent,
     NavBarComponent,
     HomeInnerComponent,
     ThemeToggleComponent,
