@@ -12,17 +12,11 @@ export class CardProjectComponent {
 @Input() cardData!:cardContent;
 imageHasLoaded: boolean = false;
 
-ngAfterViewInit(){
-  if(!this.imageHasLoaded){
-    this.reDoFrontCard();
-  }
-}
-
 hasLoaded(){
  this.imageHasLoaded = true;
 }
 
 reDoFrontCard(){
-  this.innerHtml += null;
+
 }
 }
