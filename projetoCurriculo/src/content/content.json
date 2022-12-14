@@ -98,14 +98,14 @@
     },
     {
       "name": "Javascript",
-      "progress": 0.88
+      "progress": 0.85
     },
     {
       "name": "Angular",
       "progress": 0.75
     }
   ],
-  
+
   "cardsContent" : [
     {
       "title": "Lá na Land",
@@ -135,5 +135,6 @@
       "image": "../assets/images/portfolioCinema.jpg",
       "category": "banco"
     }
-  ]
+  ],
+  "tWriterContent": ["geóloga", "programadora", "louca por gatinhos"]
 }

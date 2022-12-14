@@ -1,5 +1,5 @@
-import { NONE_TYPE } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
+import { ContentService } from 'src/app/services/content.service';
 
 @Component({
   selector: 'app-home-inner',
@@ -10,7 +10,13 @@ export class HomeInnerComponent implements OnInit {
 
   nome = "Luiza Motta Campello";
 
+  public tWriterData!: Array<string>;
+
+  constructor (private contentService: ContentService) {}
+
   ngOnInit(): void {
+
+    this.getTWriterArray();
 
     const Typewriter = require('t-writer.js');
 
@@ -24,18 +30,17 @@ export class HomeInnerComponent implements OnInit {
       cursorColor: 'none'
     });
 
-    writer
+    this.tWriterData.forEach(element => {
+      writer
       .changeTypeClass('t-writer')
-      .type('geóloga')
+      .type(element)
       .rest(500)
-      .remove(7)
-      .type('programadora')
-      .rest(500)
-      .remove(12)
-      .type('louca por gatinhos')
-      .rest(500)
-      .remove(18)
+      .remove(element.length)
       .start()
+    });
+  }
 
+  getTWriterArray() {
+    this.tWriterData = this.contentService.getTWriterArray();
   }
 }
