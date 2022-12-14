@@ -1,4 +1,4 @@
-.intro{
+.intro {
     z-index: 1;
     margin:auto;
     display:flex;
@@ -7,3 +7,9 @@
     width: 80%;
     padding-top: 10%;
 }
+
+.target {
+    font-size: 24px;
+}
+
+
