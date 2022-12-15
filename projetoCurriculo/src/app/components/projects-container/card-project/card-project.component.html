@@ -2,7 +2,15 @@
 <a href="{{ cardData.link }}" target="_blank" rel="noopener noreferrer"> asd asd as</a>
   <div class="flip-card-inner">
     <div class="flip-card-front">
-      <img src="{{ cardData.image }}" alt="Avatar" style="width:300px;height:300px;">
+      <img [src]="cardData.image"  style="width:300px;height:300px;" *ngIf="!error" (error)="failedLoad()">
+      <div class="card-front-title" *ngIf= "!error">
+        <p> {{ cardData.title }} </p>
+      </div>
+      <ng-template [ngIf]="error">
+        <div class="error">
+          <h3>{{ cardData.title }}</h3>
+        </div>
+      </ng-template>
     </div>
     <div class="flip-card-back">
       <h3> {{ cardData.title }} </h3>

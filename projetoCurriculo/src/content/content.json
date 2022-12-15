@@ -2,58 +2,15 @@
   "socialMedia": [
     {
       "name": "github",
-      "link": "https://github.com/luizacampello"
+      "link": "https://github.com/"
     },
     {
       "name": "instagram",
-      "link": "https://www.instagram.com/lmcampello/"
+      "link": "https://www.instagram.com/"
     },
     {
       "name": "linkedin",
-      "link": "https://www.linkedin.com/in/luizacampello/"
-    }
-  ],
-
-  "workExperience": [
-    {
-      "name": "Github",
-      "beginDate": "Janeiro-2020",
-      "endDate": "Atualmente",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis.",
-      "local": "Canada"
-    },
-    {
-      "name": "Google",
-      "beginDate": "Dezembro-2016",
-      "endDate": "Outubro-2019",
-      "description": "Lorem ipsum dolor elementum lorem ornare sit amet, consectetur adipiscing elit. Quisque scelerisque adipiscing diam non nisi semper. Maecenas facilisis placerat, facilisis mollis.",
-      "local": "Belo Horizonte-MG",
-      "link": "https://www.google.com/"
-    },
-    {
-        "name": "Microsoft",
-        "beginDate": "Dezembro-2016",
-        "endDate": "Outubro-2015",
-        "description": "Lorem ipsum dolor elementum lorem ornare sit amet, consectetur adipiscing elit. Quisque scelerisque adipiscing diam non nisi semper. Maecenas facilisis placerat, facilisis mollis.",
-        "local": "Varginha-MG",
-        "link": "https://www.google.com/"
-      }
-  ],
-
-  "educationExperience": [
-    {
-      "courseName": "Geologia",
-      "degree": "Graduação",
-      "beginDate": "Março-2014",
-      "endDate": "Dezembro-2020",
-      "local": "Universidade de Brasilia"
-    },
-    {
-      "courseName": "Processamento de imagens de Satélite",
-      "degree": "Mestrado",
-      "beginDate": "Janeiro-2021",
-      "endDate": "Atualmente",
-      "local": "PPGGAG - Universidade de Brasilia"
+      "link": "https://www.linkedin.com/"
     }
   ],
 
@@ -66,73 +23,213 @@
     {
       "id": "FR",
       "name": "Francês",
-      "level": "Básico",
+      "level": "Avançado",
       "description": [
         "TCF TP – Tout Public",
         "Intercâmbio de 2 meses na escola Le Cordon Bleu"
       ]
     },
     {
-      "id": "ESP",
-      "name": "Espanhol",
+      "id": "IT",
+      "name": "Italiano",
       "level": "Intermediário"
     }
   ],
 
   "skills": [
     {
-      "name": "C#",
-      "progress": 0.95
+      "name": "Unity",
+      "progress": 1 
     },
     {
-      "name": "SQL",
-      "progress": 0.90
+      "name": "Angular",
+      "progress": 0.99
     },
     {
-      "name": "HTML",
-      "progress": 0.80
+      "name": "HTML/CSS",
+      "progress": 0.8
     },
     {
       "name": "CSS",
       "progress": 0.85
     },
     {
-      "name": "Javascript",
-      "progress": 0.88
+      "name": "Java",
+      "progress": 0.7
     },
     {
-      "name": "Angular",
-      "progress": 0.75
+      "name": ".NET",
+      "progress": 0.8
     }
   ],
-  "cardsContent" : [
+
+  "cardsContent": [
     {
-      "title": "Teste",
-      "desc": "Nesse projeto a gnt fez muita coisa",
-      "link": "https://github.com/luizacampello",
-      "image": "../assets/images/avatar.jpg",
-      "category": "front"
+      "title": "Limbo",
+      "desc": "Jogo de plataforma - 2010",
+      "link": "https://store.steampowered.com/app/48000/LIMBO/?l=portuguese",
+      "image": "../assets/images/limbo-indie.jpg",
+      "category": "Games"
     },
     {
-      "title": "Teste 2 ",
-      "desc": "Nesse projeto a gnt fez muita coisaasdasdasd",
-      "link": "https://github.com/luizacampello",
-      "image": "../assets/images/avatar.jpg",
-      "category": "back"
+      "title": "Ori and the Blind Forest",
+      "desc": "Conta a história de um jovem órfão destinado a feitos heróicos através de um jogo de plataforma com um visual impressionante, criado pela Moon Studios para PC.",
+      "link": "https://store.steampowered.com/app/261570/Ori_and_the_Blind_Forest/",
+      "image": "../assets/images/ori.jpg",
+      "category": "Games"
     },
     {
-      "title": "Teste 3",
-      "desc": "Nesse projeto a gnt fez muita coisaasdasdasd",
-      "link": "https://github.com/luizacampello",
-      "image": "../assets/images/avatar.jpg",
-      "category": "design"
+      "title": "Portas e Janelas",
+      "desc": "",
+      "link": "https://www.instagram.com/world_doorsandwindows/",
+      "image": "../assets/images/gato-janela.jpg",
+      "category": "Fotografia"
     },
     {
-      "title": "Teste 4",
-      "desc": "Nesse projeto a gnt fez muita coisaasdasdasd",
-      "link": "https://github.com/luizacampello",
-      "image": "../assets/images/avatar.jpg",
-      "category": "design"
+      "title": "Ori and the Will of the Wisps",
+      "desc": "Sequência direta de Ori and the Blind Forest de 2015. Lançado em março de 2020 para Xbox One e Microsoft Windows.",
+      "link": "https://store.steampowered.com/app/1057090/Ori_and_the_Will_of_the_Wisps/",
+      "image": "../assets/images/ori2.jpg",
+      "category": "Games"
     }
-  ]
+  ],
+
+  "tWriterContent": ["engenheira de software", "desenvolvedora de jogos", "designer", "fotógrafa"],
+
+  "textContentData": [
+    {
+      "id": "aboutMeContainer",
+      "title": "Sobre mim",
+      "subTitle": "",
+      "text": [
+        "Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.",
+        "Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas."
+      ]
+    },
+    {
+      "id": "skills",
+      "title": "",
+      "subTitle": "Habilidades",
+      "text": [
+        "Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas."
+      ]
+    },
+    {
+      "id": "languages",
+      "title": "",
+      "subTitle": "Idiomas",
+      "text": [
+        "Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas."
+      ]
+    },
+    {
+      "id": "experienceContainer",
+      "title": "Experiências",
+      "subTitle": "",
+      "text": [
+        "Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas."
+      ]
+    },
+    {
+      "id": "projectsContainer",
+      "title": "Projetos",
+      "subTitle": "",
+      "text": [
+        "Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas."
+      ]
+    },
+    {
+      "id": "contactFormContainer",
+      "title": "Entre em contato!",
+      "subTitle": "",
+      "text": []
+    }
+  ],
+
+  "timelineData":[
+    {
+      "id": "educationExperiences",
+      "title": "Educação",
+      "timelineElements": [
+        {
+          "name": "Ciência da Computação",
+          "type": "Graduação",
+          "beginDate": "jan/2008",
+          "endDate": "jun/2012",
+          "description": [],
+          "local": "Brasília-DF",
+          "link": ""
+        },
+        {
+          "name": "Sistemas Distribuídos",
+          "type": "Mestrado",
+          "beginDate": "jan/2014",
+          "endDate": "dez/2016",
+          "description": ["Período sanduíche na Holanda"],
+          "local": "Brasília-DF",
+          "link": "https://www.cic.unb.br/"
+        }
+      ]
+    },
+
+    {
+      "id": "workExperiences",
+      "title": "Experiências",
+      "timelineElements": [
+        {
+          "name": "Double Eleven",
+          "type": "Estágio",
+          "beginDate": "mar/2009",
+          "endDate": "mar/2011",
+          "description": ["Desenvolvimento do jogo Limbo"],
+          "local": "Remoto",
+          "link": ""
+        },
+        {
+          "name": "Moon Studios para PC.",
+          "type": "Software Engineer",
+          "beginDate": "abril/2012",
+          "endDate": "maio/2019",
+          "description": ["Desenvolvimento do jogo Ori and the Blind Forest", "Desenvolvimento do jogo Ori and the Will of the Wisps"],
+          "local": "Remoto",
+          "link": "https://www.orithegame.com/moon-studios/"
+        },
+        {
+          "name": "Xbox Game Studios",
+          "type": "Software Engineer",
+          "beginDate": "julho/2019",
+          "endDate": "atualmente",
+          "description": [],
+          "local": "Canada",
+          "link": "https://www.xbox.com/pt-BR/xbox-game-studios"
+        }
+      ]
+    }
+  ],
+
+  "navBarData": [{
+    "href":"homeContainer",
+    "iconClass": "bi bi-house-door",
+    "pageName": "Home"
+  },
+  {
+    "href":"aboutMeContainer",
+    "iconClass": "bi bi-person navButtons",
+    "pageName": "Sobre"
+  },
+  {
+    "href":"experienceContainer",
+    "iconClass": "bi bi-file-earmark navButtons",
+    "pageName": "XP"
+  },
+  {
+    "href":"projectsContainer",
+    "iconClass": "bi bi-book navButtons",
+    "pageName": "Projetos"
+  },
+  {
+    "href":"contactFormContainer",
+    "iconClass": "bi bi-envelope navButtons",
+    "pageName": "Contato"
+  }]
 }

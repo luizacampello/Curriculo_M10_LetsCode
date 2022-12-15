@@ -1,5 +1,5 @@
 import { cardContent } from './../../models/card-content.model';
-import { Component, Input, Renderer2 } from '@angular/core';
+import { Component, Renderer2 } from '@angular/core';
 import { ContentService } from 'src/app/services/content.service';
 
 @Component({
@@ -9,10 +9,10 @@ import { ContentService } from 'src/app/services/content.service';
 })
 
 export class ProjectsContainerComponent {
-  @Input() public activeId = "All";
   public cardsArray : Array<cardContent> = [];
   public cardsArrayFiltered : Array<cardContent> = [];
-  public categoryArray : Array<string> = ["All"];
+  public categoryArray : Array<string> = ["TODOS"];
+  public id : string = "projectsContainer";
 
   constructor (private contentService: ContentService, private renderer: Renderer2) {}
 
@@ -20,12 +20,10 @@ export class ProjectsContainerComponent {
     this.getCardsArray();
     this.generateCategoryList();
     this.cardsArrayFiltered = this.cardsArray;
-
   }
 
   ngAfterViewInit(): void {
-    this.activateButton("All");
-
+    this.activateButton("TODOS");
   }
 
   getCardsArray(): void {
@@ -35,28 +33,26 @@ export class ProjectsContainerComponent {
   generateCategoryList(): void {
     this.cardsArray.forEach(element => {
       let categoryText = element.category;
-      const text = categoryText.charAt(0).toUpperCase() + categoryText.slice(1);
-    if(!this.categoryArray.includes(text)){
-      this.categoryArray.push(text)
-    }
-  });
+      const text = categoryText.toUpperCase();
+      if(!this.categoryArray.includes(text)){
+        this.categoryArray.push(text)
+      }
+    });
   }
 
   filterList(event: any){
-
     const id = event.target.id;
     this.activateButton(id);
 
-    if(id == "All"){
+    if(id == "TODOS"){
       this.cardsArrayFiltered = this.cardsArray;
     }
     else {
-      this.cardsArrayFiltered = this.cardsArray.filter( e => e.category == id.toLowerCase())
+      this.cardsArrayFiltered = this.cardsArray.filter( e => e.category.toUpperCase() == id.toUpperCase())
     }
   }
 
   activateButton(id: string) {
-
     let disableButton = document.querySelector(".selected");
     if(disableButton !== null){
       disableButton.classList.remove("selected");
@@ -67,8 +63,4 @@ export class ProjectsContainerComponent {
       button.classList.add("selected");
     }
   }
-
-
-
-
 }

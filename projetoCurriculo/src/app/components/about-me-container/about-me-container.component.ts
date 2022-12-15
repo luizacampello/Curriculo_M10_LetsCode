@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./about-me-container.component.css']
 })
 export class AboutMeContainerComponent {
-
+  public id: string = "aboutMeContainer";
 }

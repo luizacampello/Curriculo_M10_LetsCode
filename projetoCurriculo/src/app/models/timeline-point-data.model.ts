@@ -1,8 +1,9 @@
-export interface workExperienceData {
+export interface TimelinePointData {
     name: string;
+    type: string;
     beginDate: string;
     endDate: string;
-    description: string;
+    description: string[];
     local: string;
     link?: string;
 }

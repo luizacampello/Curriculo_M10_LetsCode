@@ -10,6 +10,7 @@ import { SkillsData } from 'src/app/models/skills-data.model';
 export class SkillsComponent {
 
   public skillsData: Array<SkillsData> = [];
+  public id: string = "skills";
 
   constructor (private contentService: ContentService) {}
 

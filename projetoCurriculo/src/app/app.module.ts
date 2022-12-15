@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HomeContainerComponent } from './components/home-container/home-container.component';
@@ -11,13 +12,14 @@ import { ExperienceContainerComponent } from './components/experience-container/
 import { SociaLMediaComponent } from './components/social-media/social-media.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { LanguagesComponent } from './components/languages/languages.component';
-import { WorkExperiencesComponent } from './components/work-experiences/work-experiences.component';
-import { EducationExperiencesComponent } from './components/education-experiences/education-experiences.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { HomeInnerComponent } from './components/home-inner/home-inner.component';
 import { ThemeToggleComponent } from './components/theme-toggle/theme-toggle.component';
 import { CardProjectComponent } from './components/projects-container/card-project/card-project.component';
 import { ScrollToTopComponent } from './components/scroll-to-top/scroll-to-top.component';
+import { TextBoxComponent } from './components/text-box/text-box.component';
+import { VerticalTimelineComponent } from './components/vertical-timeline/vertical-timeline.component';
+
 
 @NgModule({
   declarations: [
@@ -31,16 +33,17 @@ import { ScrollToTopComponent } from './components/scroll-to-top/scroll-to-top.c
     SociaLMediaComponent,
     SkillsComponent,
     LanguagesComponent,
-    WorkExperiencesComponent,
-    EducationExperiencesComponent,
     NavBarComponent,
     HomeInnerComponent,
     ThemeToggleComponent,
     CardProjectComponent,
     ScrollToTopComponent,
+    TextBoxComponent,
+    VerticalTimelineComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
