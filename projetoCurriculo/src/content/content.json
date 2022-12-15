@@ -212,5 +212,31 @@
         }
       ]
     }
-  ]
+  ],
+
+  "navBarData": [{
+    "href":"homeContainer",
+    "iconClass": "bi bi-house-door",
+    "pageName": "Home"
+  },
+  {
+    "href":"aboutMeContainer",
+    "iconClass": "bi bi-person navButtons",
+    "pageName": "Sobre"
+  },
+  {
+    "href":"experienceContainer",
+    "iconClass": "bi bi-file-earmark navButtons",
+    "pageName": "XP"
+  },
+  {
+    "href":"projectsContainer",
+    "iconClass": "bi bi-book navButtons",
+    "pageName": "Projetos"
+  },
+  {
+    "href":"contactFormContainer",
+    "iconClass": "bi bi-envelope navButtons",
+    "pageName": "Contato"
+  }]
 }

@@ -1,3 +1,4 @@
+import { NavBarData } from './../models/nav-bar-data.model';
 import { TimelineData} from '../models/timeline-data.model';
 import { Injectable } from '@angular/core';
 import { socialMediaData } from '../models/socialmedia-data.model';
@@ -21,6 +22,7 @@ export class ContentService {
   tWriterArray: Array<string> = content.tWriterContent;
   textContentData : Array<TextContentData> = content.textContentData;
   timelineDataArray : Array<TimelineData> = content.timelineData;
+  navBarArray: Array<NavBarData> = content.navBarData;
 
   getsocialMediaArray(): socialMediaData[] {
     return this.socialMediaArray;
@@ -74,6 +76,10 @@ export class ContentService {
     });
 
     return timelines;
+  }
+
+  getNavBarArray(): NavBarData[] {
+    return this.navBarArray;
   }
 }
 
