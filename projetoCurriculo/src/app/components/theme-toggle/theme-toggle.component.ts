@@ -8,11 +8,12 @@ import { ThemeService } from 'src/app/services/theme.service';
 })
 export class ThemeToggleComponent implements OnInit {
 
-  theme: string = 'bootstrap';
+  theme: string = 'bootstrap-dark';
 
   constructor(private themeService: ThemeService) { }
 
   ngOnInit(): void {
+    this.theme = this.themeService.importUserPreferenceTheme();
   }
 
   toggleTheme() {
