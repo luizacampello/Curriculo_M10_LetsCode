@@ -63,3 +63,30 @@ div.flip-card a {
     transform: rotateY(180deg);
     padding: 15px;
   }
+
+  .card-front-title{
+    width: 100%;
+    height: 30%;
+
+    border-radius: 0px 0px 10px 10px;
+    position: absolute;
+    top: 70%;
+
+    background: linear-gradient(rgba(255,255,255,0), var(--primary-color));
+  }
+
+  .card-front-title p{
+    color: white;
+    padding-top: 17%;
+    font-weight: 500;
+    font-size: larger;
+  }
+
+  .error{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

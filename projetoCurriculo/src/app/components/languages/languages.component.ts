@@ -8,9 +8,8 @@ import { ContentService } from 'src/app/services/content.service';
   styleUrls: ['./languages.component.css']
 })
 export class LanguagesComponent {
-
+  public id: string = "languages";
   public languagesArray : Array<languageData> = [];
-
   public detailsSign = "plus-lg";
 
   constructor (private contentService: ContentService) {}
