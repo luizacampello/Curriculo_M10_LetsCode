@@ -14,49 +14,6 @@
     }
   ],
 
-  "workExperience": [
-    {
-      "name": "Github",
-      "beginDate": "Janeiro-2020",
-      "endDate": "Atualmente",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis.",
-      "local": "Canada"
-    },
-    {
-      "name": "Google",
-      "beginDate": "Dezembro-2016",
-      "endDate": "Outubro-2019",
-      "description": "Lorem ipsum dolor elementum lorem ornare sit amet, consectetur adipiscing elit. Quisque scelerisque adipiscing diam non nisi semper. Maecenas facilisis placerat, facilisis mollis.",
-      "local": "Belo Horizonte-MG",
-      "link": "https://www.google.com/"
-    },
-    {
-      "name": "Microsoft",
-      "beginDate": "Dezembro-2016",
-      "endDate": "Outubro-2015",
-      "description": "Lorem ipsum dolor elementum lorem ornare sit amet, consectetur adipiscing elit. Quisque scelerisque adipiscing diam non nisi semper. Maecenas facilisis placerat, facilisis mollis.",
-      "local": "Varginha-MG",
-      "link": "https://www.google.com/"
-    }
-  ],
-
-  "educationExperience": [
-    {
-      "courseName": "Geologia",
-      "degree": "Graduação",
-      "beginDate": "Março-2014",
-      "endDate": "Dezembro-2020",
-      "local": "Universidade de Brasilia"
-    },
-    {
-      "courseName": "Processamento de imagens de Satélite",
-      "degree": "Mestrado",
-      "beginDate": "Janeiro-2021",
-      "endDate": "Atualmente",
-      "local": "PPGGAG - Universidade de Brasilia"
-    }
-  ],
-
   "languages": [
     {
       "id": "EN",
