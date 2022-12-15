@@ -16,8 +16,6 @@ export class ContentService {
 
   constructor() { }
 
-  workExperienceArray : Array<workExperienceData> = content.workExperience;
-  educationExperienceArray : Array<educationExperienceData> = content.educationExperience;
   socialMediaArray : Array<socialMediaData> = content.socialMedia;
   languagesArray : Array<languageData> = content.languages;
   skillsArray: Array<SkillsData> = content.skills;
@@ -25,14 +23,6 @@ export class ContentService {
   tWriterArray: Array<string> = content.tWriterContent;
   textContentData : Array<TextContentData> = content.textContentData;
   timelineDataArray : Array<TimelineData> = content.timelineData;
-
-  getWorkExperienceArray(): workExperienceData[] {
-    return this.workExperienceArray;
-  }
-
-  geteducationExperienceArray(): educationExperienceData[] {
-    return this.educationExperienceArray;
-  }
 
   getsocialMediaArray(): socialMediaData[] {
     return this.socialMediaArray;

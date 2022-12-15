@@ -39,11 +39,11 @@
   "skills": [
     {
       "name": "C#",
-      "progress": 0.95
+      "progress": 0.90
     },
     {
-      "name": "SQL",
-      "progress": 0.9
+      "name": "Angular",
+      "progress": 0.99
     },
     {
       "name": "HTML",
@@ -58,7 +58,7 @@
       "progress": 0.85
     },
     {
-      "name": "Angular",
+      "name": "SQL",
       "progress": 0.75
     }
   ],
