@@ -20,20 +20,15 @@ export class ThemeService {
 
   themeSelection: BehaviorSubject<ThemeObject> =  new BehaviorSubject<ThemeObject>(this.initialSetting);
 
-  constructor(localStorage: LocalStorageService) { }
-
-  ngOnInit(){
-    this.initialSetting.newValue = this.initUserPreferenceTheme();
-  }
+  constructor(public aStorage: LocalStorageService) { }
 
   setTheme(theme: string) {
-
     this.themeSelection.next(
       {
         oldValue: this.themeSelection.value.newValue,
         newValue: theme
       });
-      localStorage['set'](theme);
+      this.aStorage.set("theme", theme);
   }
 
   importUserPreferenceTheme() : string {
@@ -44,14 +39,14 @@ export class ThemeService {
     return this.themeSelection.asObservable();
   }
 
-  initUserPreferenceTheme() : string {
-    let preference = localStorage['get']("theme");
+  initUserPreferenceTheme() : void {
+    let preference = this.aStorage.get("theme");
 
     if(!preference) {
       preference = "bootstrap-dark";
+      this.aStorage['set']("theme", preference);
     }
-
-    return preference;
+    this.initialSetting.newValue = preference;
   }
 }
 

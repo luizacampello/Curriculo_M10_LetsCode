@@ -14,6 +14,7 @@ export class AppComponent implements OnInit{
   constructor (private ThemeService: ThemeService, private renderer: Renderer2) {}
 
   ngOnInit(): void {
+    this.ThemeService.initUserPreferenceTheme();
     this.ThemeService.themeChanges().subscribe(theme => {
       if (theme.oldValue) {
         this.renderer.removeClass(document.body, theme.oldValue);
