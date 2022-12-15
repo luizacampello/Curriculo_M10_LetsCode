@@ -1,0 +1,25 @@
+<div class="container mr-0">
+    <div class="row m-0 justify-content-center">
+      <div class="col-lg-10">
+        <h2>{{timelineContent.title}}</h2>
+        <ul class="timeline">
+            <li *ngFor="let pointInTime of timelineContent.timelineElements">
+              <div *ngIf="pointInTime.link; else emptyLink">
+                <a target="_blank" href="{{pointInTime.link}}">
+                  <h3>{{pointInTime.name}} | {{pointInTime.type}}</h3>
+                </a>
+              </div>
+
+              <ng-template #emptyLink>
+                <h3>{{pointInTime.name}} | {{pointInTime.type}}</h3>
+              </ng-template>
+
+              <p class="mb-0"> <b>{{pointInTime.local}}</b> | {{pointInTime.beginDate}} - {{pointInTime.endDate}}</p>
+              <div *ngFor="let line of pointInTime.description">
+                <p class="mb-0">- {{line}}</p>
+              </div>
+            </li>
+        </ul>
+      </div>
+    </div>
+</div>
