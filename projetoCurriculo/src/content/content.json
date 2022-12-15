@@ -23,30 +23,30 @@
     {
       "id": "FR",
       "name": "Francês",
-      "level": "Básico",
+      "level": "Avançado",
       "description": [
         "TCF TP – Tout Public",
         "Intercâmbio de 2 meses na escola Le Cordon Bleu"
       ]
     },
     {
-      "id": "ESP",
-      "name": "Espanhol",
+      "id": "IT",
+      "name": "Italiano",
       "level": "Intermediário"
     }
   ],
 
   "skills": [
     {
-      "name": "C#",
-      "progress": 0.90
+      "name": "Unity",
+      "progress": 1 
     },
     {
       "name": "Angular",
       "progress": 0.99
     },
     {
-      "name": "HTML",
+      "name": "HTML/CSS",
       "progress": 0.8
     },
     {
@@ -54,54 +54,47 @@
       "progress": 0.85
     },
     {
-      "name": "Javascript",
-      "progress": 0.85
+      "name": "Java",
+      "progress": 0.7
     },
     {
-      "name": "SQL",
-      "progress": 0.75
+      "name": ".NET",
+      "progress": 0.8
     }
   ],
 
   "cardsContent": [
     {
-      "title": "Lá na Land",
-      "desc": "Nesse projeto a gnt fez muita coisa",
-      "link": "https://github.com/luizacampello",
-      "image": "../assets/images/laNaLand.jpg",
-      "category": "front-end"
+      "title": "Limbo",
+      "desc": "Jogo de plataforma - 2010",
+      "link": "https://store.steampowered.com/app/48000/LIMBO/?l=portuguese",
+      "image": "../assets/images/limbo-indie.jpg",
+      "category": "Games"
     },
     {
-      "title": "API Eventos",
-      "desc": "Módulo API",
-      "link": "https://github.com/luizacampello",
-      "image": "../assets/images/apiEventos.jpg",
-      "category": "back-end"
+      "title": "Ori and the Blind Forest",
+      "desc": "Conta a história de um jovem órfão destinado a feitos heróicos através de um jogo de plataforma com um visual impressionante, criado pela Moon Studios para PC.",
+      "link": "https://store.steampowered.com/app/261570/Ori_and_the_Blind_Forest/",
+      "image": "../assets/images/ori.jpg",
+      "category": "Games"
     },
     {
-      "title": "Shopping Coders",
-      "desc": "Nesse projeto a gnt fez muita coisaasdasdasd",
-      "link": "https://github.com/luizacampello",
-      "image": "../assets/images/logoShopping.png",
-      "category": "front-end"
+      "title": "Portas e Janelas",
+      "desc": "",
+      "link": "https://www.instagram.com/world_doorsandwindows/",
+      "image": "../assets/images/gato-janela.jpg",
+      "category": "Fotografia"
     },
     {
-      "title": "Portfolio Cinematografico BD",
-      "desc": "Nesse projeto a gnt fez muita coisaasdasdasd",
-      "link": "https://github.com/luizacampello",
-      "image": "../assets/images/portfolioCinema.jpg",
-      "category": "Banco de Dados"
-    },
-    {
-      "title": "Portfolio Cinematografico BD",
-      "desc": "Nesse projeto a gnt fez muita coisaasdasdasd",
-      "link": "https://github.com/luizacampello",
-      "image": "none",
-      "category": "Banco de Dados"
+      "title": "Ori and the Will of the Wisps",
+      "desc": "Sequência direta de Ori and the Blind Forest de 2015. Lançado em março de 2020 para Xbox One e Microsoft Windows.",
+      "link": "https://store.steampowered.com/app/1057090/Ori_and_the_Will_of_the_Wisps/",
+      "image": "../assets/images/ori2.jpg",
+      "category": "Games"
     }
   ],
 
-  "tWriterContent": ["geóloga", "programadora", "louca por gatinhos"],
+  "tWriterContent": ["engenheira de software", "desenvolvedora de jogos", "designer", "fotógrafa"],
 
   "textContentData": [
     {
@@ -147,7 +140,7 @@
     },
     {
       "id": "contactFormContainer",
-      "title": "Envie uma Mensagem!",
+      "title": "Entre em contato!",
       "subTitle": "",
       "text": []
     }
@@ -161,8 +154,8 @@
         {
           "name": "Ciência da Computação",
           "type": "Graduação",
-          "beginDate": "jan/2016",
-          "endDate": "jun/2021",
+          "beginDate": "jan/2008",
+          "endDate": "jun/2012",
           "description": [],
           "local": "Brasília-DF",
           "link": ""
@@ -170,9 +163,9 @@
         {
           "name": "Sistemas Distribuídos",
           "type": "Mestrado",
-          "beginDate": "jan/2016",
-          "endDate": "em andamento",
-          "description": [],
+          "beginDate": "jan/2014",
+          "endDate": "dez/2016",
+          "description": ["Período sanduíche na Holanda"],
           "local": "Brasília-DF",
           "link": "https://www.cic.unb.br/"
         }
@@ -184,31 +177,31 @@
       "title": "Experiências",
       "timelineElements": [
         {
-          "name": "Google",
+          "name": "Double Eleven",
           "type": "Estágio",
-          "beginDate": "mar/2018",
-          "endDate": "mar/2020",
-          "description": ["Equipe responsável pelo desenvolvimento e aprimoramento do algoritmo de busca", "Participação no Summit 2019 em Los Angeles"],
+          "beginDate": "mar/2009",
+          "endDate": "mar/2011",
+          "description": ["Desenvolvimento do jogo Limbo"],
           "local": "Remoto",
-          "link": "https://www.google.com/"
+          "link": ""
         },
         {
-          "name": "Alura",
-          "type": "Estágio",
-          "beginDate": "abril/2020",
-          "endDate": "maio/2021",
-          "description": ["Estágio em Front-end | Angular"],
-          "local": "Remoto",
-          "link": "https://www.alura.com.br/"
-        },
-        {
-          "name": "Microsoft",
+          "name": "Moon Studios para PC.",
           "type": "Software Engineer",
-          "beginDate": "julho/2021",
+          "beginDate": "abril/2012",
+          "endDate": "maio/2019",
+          "description": ["Desenvolvimento do jogo Ori and the Blind Forest", "Desenvolvimento do jogo Ori and the Will of the Wisps"],
+          "local": "Remoto",
+          "link": "https://www.orithegame.com/moon-studios/"
+        },
+        {
+          "name": "Xbox Game Studios",
+          "type": "Software Engineer",
+          "beginDate": "julho/2019",
           "endDate": "atualmente",
           "description": [],
           "local": "Canada",
-          "link": ""
+          "link": "https://www.xbox.com/pt-BR/xbox-game-studios"
         }
       ]
     }

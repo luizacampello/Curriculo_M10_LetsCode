@@ -11,7 +11,7 @@ import { ContentService } from 'src/app/services/content.service';
 export class ProjectsContainerComponent {
   public cardsArray : Array<cardContent> = [];
   public cardsArrayFiltered : Array<cardContent> = [];
-  public categoryArray : Array<string> = ["ALL"];
+  public categoryArray : Array<string> = ["TODOS"];
   public id : string = "projectsContainer";
 
   constructor (private contentService: ContentService, private renderer: Renderer2) {}
@@ -23,7 +23,7 @@ export class ProjectsContainerComponent {
   }
 
   ngAfterViewInit(): void {
-    this.activateButton("ALL");
+    this.activateButton("TODOS");
   }
 
   getCardsArray(): void {
@@ -44,7 +44,7 @@ export class ProjectsContainerComponent {
     const id = event.target.id;
     this.activateButton(id);
 
-    if(id == "ALL"){
+    if(id == "TODOS"){
       this.cardsArrayFiltered = this.cardsArray;
     }
     else {

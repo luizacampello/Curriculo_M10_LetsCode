@@ -1,7 +1,7 @@
 .card {
   display: flex;
   padding: 38px 36px;
-  margin: 40px auto;
+  margin: 20px auto;
   border-radius: 4px;
   width: 80%;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
@@ -121,4 +121,24 @@ input.form-control:focus {
     border-color: var(--primary-color);
 }
 
+.icon {
+  font-size: 2rem;
+  padding: 0 1rem;
+}
+
+.contactInfo { 
+  display:flex;
+  width:80%;
+  margin:auto;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+.contactInfo a{
+  display:flex;
+  padding: 0 1rem;
+  align-items: center;
+  justify-content:center;
+}
 

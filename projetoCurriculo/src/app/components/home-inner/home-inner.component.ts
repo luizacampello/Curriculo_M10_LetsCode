@@ -8,7 +8,7 @@ import { ContentService } from 'src/app/services/content.service';
 })
 export class HomeInnerComponent implements OnInit {
 
-  nome = "Luiza Motta Campello";
+  nome = "Alice Senna";
 
   public tWriterData!: Array<string>;
 

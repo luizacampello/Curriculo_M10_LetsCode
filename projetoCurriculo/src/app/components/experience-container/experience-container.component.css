@@ -1,6 +1,7 @@
 .expBox{
     display:flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     width: 80%;
     margin:auto;
