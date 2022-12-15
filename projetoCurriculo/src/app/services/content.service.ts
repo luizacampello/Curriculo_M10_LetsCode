@@ -69,7 +69,6 @@ export class ContentService {
   }
 
   getTimelines() : string[]{
-    console.log(this.timelineDataArray);
     let timelines: string[] = [];
     this.timelineDataArray.forEach(element => {
         timelines.push(element.id)
