@@ -1,4 +1,3 @@
-
 .floating-menu {
   z-index: 999;
   left: 0;
@@ -50,8 +49,7 @@
   font-size: 1rem;
 }
 
+
 .navPages:hover > .pageName{
   display: inline-block;
 }
-
-

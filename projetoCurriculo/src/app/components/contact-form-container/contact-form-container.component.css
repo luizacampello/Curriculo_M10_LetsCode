@@ -90,7 +90,7 @@ h3 {
 
 .form-control:focus + span + .border,
 .form-control:valid + span + .border {
-  transform: scaleX(1);
+  transform: scaleX(1rem);
   border-bottom: 2px solid var(--primary-color);
 }
 
@@ -113,6 +113,7 @@ input.form-control:focus {
 .btn.btn-outline-info{
     color: var(--primary-color);
     border-color: var(--primary-color);
+    border-radius: 50px;
 }
 .btn-outline-info:hover, .btn-outline-info:active, .btn-outline-info:visited {
     background-color: var(--primary-color) !important;

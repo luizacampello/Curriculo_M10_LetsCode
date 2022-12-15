@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HomeContainerComponent } from './components/home-container/home-container.component';
@@ -18,6 +19,7 @@ import { CardProjectComponent } from './components/projects-container/card-proje
 import { ScrollToTopComponent } from './components/scroll-to-top/scroll-to-top.component';
 import { TextBoxComponent } from './components/text-box/text-box.component';
 import { VerticalTimelineComponent } from './components/vertical-timeline/vertical-timeline.component';
+
 
 @NgModule({
   declarations: [
@@ -40,7 +42,8 @@ import { VerticalTimelineComponent } from './components/vertical-timeline/vertic
     VerticalTimelineComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
