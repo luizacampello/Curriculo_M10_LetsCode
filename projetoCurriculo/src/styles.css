@@ -77,3 +77,13 @@ body.bootstrap .color-overlay{
 .t-writer {
   font-weight: bold;
 }
+
+body.bootstrap .footer
+{
+  background-color: var(--footer-light-color);
+}
+
+body.bootstrap-dark .footer
+{
+  background-color: var(--footer-dark-color);
+}
