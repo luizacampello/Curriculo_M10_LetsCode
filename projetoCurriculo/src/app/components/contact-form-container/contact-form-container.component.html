@@ -5,15 +5,13 @@
 <div class="card">
   <div class="cardContent p-5">
 
-    <h2 class="py-3">Envie uma mensagem</h2>
-
   <form [formGroup]="form" #f = "ngForm" (ngSubmit)="submitForm()">
     <div class="form-row">
       <label class="form-group col-md-6" for="inputNome">
         <input type="text" class="form-control" id="inputNome" formControlName="name" required>
         <span for="inputNome" id="inputLabelName"><h4>Nome</h4></span>
         <span class="border"></span>
-        <div *ngIf="!name.valid && (name.dirty || name.touched)"
+        <div *ngIf="name.invalid && (name.dirty || name.touched)"
         class="alert alert-danger">Nome é obrigatório</div>
       </label>
 
@@ -21,7 +19,7 @@
         <input type="text" class="form-control" id="inputEmail" formControlName="email" required/>
         <span for="inputEmail" id="inputLabelEmail"><h4>Email</h4></span>
         <span class="border"></span>
-        <div *ngIf="!email.valid && (email.dirty || email.touched)"
+        <div *ngIf="email.invalid && (email.dirty || email.touched)"
         class="alert alert-danger">Email é obrigatório</div>
       </label>
     </div>
@@ -30,7 +28,7 @@
       <input type="text" class="form-control" id="inputMensagem" formControlName="message" required />
       <span for="inputMensagem" id="inputLabelMessage"><h4>Mensagem</h4></span>
       <span class="border"></span>
-      <div *ngIf="!message.valid && (message.dirty || message.touched)"
+      <div *ngIf="message.invalid && (message.dirty || message.touched)"
         class="alert alert-danger">Messagem é obrigatória</div>
     </label>
 
