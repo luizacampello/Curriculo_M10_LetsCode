@@ -2,58 +2,15 @@
   "socialMedia": [
     {
       "name": "github",
-      "link": "https://github.com/luizacampello"
+      "link": "https://github.com/"
     },
     {
       "name": "instagram",
-      "link": "https://www.instagram.com/lmcampello/"
+      "link": "https://www.instagram.com/"
     },
     {
       "name": "linkedin",
-      "link": "https://www.linkedin.com/in/luizacampello/"
-    }
-  ],
-
-  "workExperience": [
-    {
-      "name": "Github",
-      "beginDate": "Janeiro-2020",
-      "endDate": "Atualmente",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis.",
-      "local": "Canada"
-    },
-    {
-      "name": "Google",
-      "beginDate": "Dezembro-2016",
-      "endDate": "Outubro-2019",
-      "description": "Lorem ipsum dolor elementum lorem ornare sit amet, consectetur adipiscing elit. Quisque scelerisque adipiscing diam non nisi semper. Maecenas facilisis placerat, facilisis mollis.",
-      "local": "Belo Horizonte-MG",
-      "link": "https://www.google.com/"
-    },
-    {
-      "name": "Microsoft",
-      "beginDate": "Dezembro-2016",
-      "endDate": "Outubro-2015",
-      "description": "Lorem ipsum dolor elementum lorem ornare sit amet, consectetur adipiscing elit. Quisque scelerisque adipiscing diam non nisi semper. Maecenas facilisis placerat, facilisis mollis.",
-      "local": "Varginha-MG",
-      "link": "https://www.google.com/"
-    }
-  ],
-
-  "educationExperience": [
-    {
-      "courseName": "Geologia",
-      "degree": "Graduação",
-      "beginDate": "Março-2014",
-      "endDate": "Dezembro-2020",
-      "local": "Universidade de Brasilia"
-    },
-    {
-      "courseName": "Processamento de imagens de Satélite",
-      "degree": "Mestrado",
-      "beginDate": "Janeiro-2021",
-      "endDate": "Atualmente",
-      "local": "PPGGAG - Universidade de Brasilia"
+      "link": "https://www.linkedin.com/"
     }
   ],
 
@@ -82,11 +39,11 @@
   "skills": [
     {
       "name": "C#",
-      "progress": 0.95
+      "progress": 0.90
     },
     {
-      "name": "SQL",
-      "progress": 0.9
+      "name": "Angular",
+      "progress": 0.99
     },
     {
       "name": "HTML",
@@ -101,7 +58,7 @@
       "progress": 0.85
     },
     {
-      "name": "Angular",
+      "name": "SQL",
       "progress": 0.75
     }
   ],
@@ -134,8 +91,16 @@
       "link": "https://github.com/luizacampello",
       "image": "../assets/images/portfolioCinema.jpg",
       "category": "Banco de Dados"
+    },
+    {
+      "title": "Portfolio Cinematografico BD",
+      "desc": "Nesse projeto a gnt fez muita coisaasdasdasd",
+      "link": "https://github.com/luizacampello",
+      "image": "none",
+      "category": "Banco de Dados"
     }
   ],
+
   "tWriterContent": ["geóloga", "programadora", "louca por gatinhos"],
 
   "textContentData": [
@@ -185,6 +150,67 @@
       "title": "Envie uma Mensagem!",
       "subTitle": "",
       "text": []
+    }
+  ],
+
+  "timelineData":[
+    {
+      "id": "educationExperiences",
+      "title": "Educação",
+      "timelineElements": [
+        {
+          "name": "Ciência da Computação",
+          "type": "Graduação",
+          "beginDate": "jan/2016",
+          "endDate": "jun/2021",
+          "description": [],
+          "local": "Brasília-DF",
+          "link": ""
+        },
+        {
+          "name": "Sistemas Distribuídos",
+          "type": "Mestrado",
+          "beginDate": "jan/2016",
+          "endDate": "em andamento",
+          "description": [],
+          "local": "Brasília-DF",
+          "link": "https://www.cic.unb.br/"
+        }
+      ]
+    },
+
+    {
+      "id": "workExperiences",
+      "title": "Experiências",
+      "timelineElements": [
+        {
+          "name": "Google",
+          "type": "Estágio",
+          "beginDate": "mar/2018",
+          "endDate": "mar/2020",
+          "description": ["Equipe responsável pelo desenvolvimento e aprimoramento do algoritmo de busca", "Participação no Summit 2019 em Los Angeles"],
+          "local": "Remoto",
+          "link": "https://www.google.com/"
+        },
+        {
+          "name": "Alura",
+          "type": "Estágio",
+          "beginDate": "abril/2020",
+          "endDate": "maio/2021",
+          "description": ["Estágio em Front-end | Angular"],
+          "local": "Remoto",
+          "link": "https://www.alura.com.br/"
+        },
+        {
+          "name": "Microsoft",
+          "type": "Software Engineer",
+          "beginDate": "julho/2021",
+          "endDate": "atualmente",
+          "description": [],
+          "local": "Canada",
+          "link": ""
+        }
+      ]
     }
   ]
 }

@@ -1,8 +1,11 @@
 <app-text-box
     [componentId] = "id"
 ></app-text-box>
-<div class="expBox">
-    <app-education-experiences></app-education-experiences>
-    <app-work-experiences></app-work-experiences>
-</div>
 
+<div class = "expBox">
+    <div *ngFor="let timeline of timelines">
+        <app-vertical-timeline
+        [timelineId] = "timeline">
+        </app-vertical-timeline>
+    </div>
+</div>
