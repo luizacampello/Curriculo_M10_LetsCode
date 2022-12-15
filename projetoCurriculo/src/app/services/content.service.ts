@@ -1,8 +1,6 @@
 import { TimelineData} from '../models/timeline-data.model';
 import { Injectable } from '@angular/core';
-import { educationExperienceData } from '../models/educationExperience-data.model';
 import { socialMediaData } from '../models/socialmedia-data.model';
-import { workExperienceData } from '../models/workExperience-data.model';
 import { languageData } from '../models/language-data.model';
 import content from '../../content/content.json';
 import { SkillsData } from '../models/skills-data.model';
