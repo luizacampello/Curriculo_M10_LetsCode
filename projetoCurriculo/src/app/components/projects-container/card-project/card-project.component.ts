@@ -10,13 +10,9 @@ import { cardContent } from 'src/app/models/card-content.model';
 })
 export class CardProjectComponent {
 @Input() cardData!:cardContent;
-imageHasLoaded: boolean = false;
+error: boolean = false;
 
-hasLoaded(){
- this.imageHasLoaded = true;
-}
-
-reDoFrontCard(){
-
+failedLoad(){
+  this.error = true;
 }
 }
