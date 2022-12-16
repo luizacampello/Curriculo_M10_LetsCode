@@ -9,11 +9,12 @@ import { ContentService } from 'src/app/services/content.service';
 })
 export class NavBarComponent {
   public NavBarData: Array<NavBarData> = [];
-  isDisplayed: boolean = true;
+  public isDisplayed!: boolean;
 
   constructor(private contentService: ContentService) {}
 
   ngOnInit(): void {
+    this.isDisplayed = (window.innerWidth) > 700;
     this.getNavBarArray();
   }
 
