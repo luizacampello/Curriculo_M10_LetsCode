@@ -12,7 +12,7 @@
         <span for="inputNome" id="inputLabelName"><h4>Nome</h4></span>
         <span class="border"></span>
         <div *ngIf="name.invalid && name.dirty"
-        class="alert alert-danger">Digite seu nome</div>
+        class="alert alert-danger">Digite um nome.</div>
       </label>
 
       <label class="form-group col-md-6">
@@ -21,7 +21,7 @@
         <span class="border"></span>
 
         <div *ngIf="email.value == '' && email.dirty"
-        class="alert alert-danger">Preciso do seu email</div>
+        class="alert alert-danger">Digite um email.</div>
 
         <div *ngIf="email.invalid && email.dirty && email.value != '' "
         class="alert alert-warning">Isso não parece um email!</div>
@@ -33,9 +33,9 @@
       <span for="inputMensagem" id="inputLabelMessage"><h4>Mensagem</h4></span>
       <span class="border"></span>
       <div *ngIf="message.value == '' && message.dirty"
-        class="alert alert-danger">Preciso da sua mensagem</div>
+        class="alert alert-danger">Digite uma mensagem.</div>
         <div *ngIf="message.invalid && message.dirty && message.value != '' "
-        class="alert alert-warning">Sua mensagem precisa ter pelo menos 3 caracteres</div>
+        class="alert alert-warning">A mensagem precisa ter pelo menos 3 caracteres.</div>
     </label>
 
     <div class = "m-auto w-50">
