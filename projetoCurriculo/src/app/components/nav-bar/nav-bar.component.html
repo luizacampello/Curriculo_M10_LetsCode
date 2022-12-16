@@ -8,10 +8,10 @@
     </button>
   </div>
 
-  <nav *ngIf="isDisplayed" class="navbar floating-menu" [class.mobile]="isOpenMenuMobile()" id="navBar">
+  <nav [ngClass]="isDisplayed ? 'd-flex':'d-none'" class="navbar floating-menu" [class.mobile]="isOpenMenuMobile()" id="navBar">
     <ul class="main-menu">
       <li *ngFor="let page of NavBarData">
-        <a href="#{{ page.href }}" class="navPages">
+        <a href="#{{page.href}}" class="navPages">
           <i class="{{ page.iconClass }}"></i>
           <span class="pageName">{{ page.pageName }}</span>
         </a>
