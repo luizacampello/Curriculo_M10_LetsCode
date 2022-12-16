@@ -1,4 +1,4 @@
-import { Component, SimpleChange, Renderer2 } from '@angular/core';
+import { Component} from '@angular/core';
 import { NavBarData } from 'src/app/models/nav-bar-data.model';
 import { ContentService } from 'src/app/services/content.service';
 
@@ -12,7 +12,7 @@ export class NavBarComponent {
   public isDisplayed!: boolean;
   public isMobile! : boolean;
 
-  constructor(private contentService: ContentService, private renderer: Renderer2) {}
+  constructor(private contentService: ContentService) {}
 
   ngOnInit(): void {
     this.isDisplayed = (window.innerWidth) > 700;
