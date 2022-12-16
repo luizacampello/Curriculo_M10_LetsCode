@@ -126,6 +126,11 @@ input.form-control:focus {
   padding: 0 1rem;
 }
 
+.alert{
+  background-color: transparent;
+  border: none;
+}
+
 .contactInfo { 
   display:flex;
   width:80%;
@@ -133,8 +138,11 @@ input.form-control:focus {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-
 }
+.alert-danger{
+  color:#e91e63;
+}
+
 .contactInfo a{
   display:flex;
   padding: 0 1rem;
@@ -142,3 +150,6 @@ input.form-control:focus {
   justify-content:center;
 }
 
+.alert-warning{
+  color:#e91;
+}
