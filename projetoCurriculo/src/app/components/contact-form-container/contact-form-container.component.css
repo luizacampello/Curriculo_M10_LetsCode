@@ -110,15 +110,17 @@ input.form-control:focus {
   border-bottom: 2px solid var(--primary-color);
 }
 
-.btn.btn-outline-info{
-    color: var(--primary-color);
-    border-color: var(--primary-color);
-    border-radius: 50px;
+.btn.btn-outline-info {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  border-radius: 50px;
 }
-.btn-outline-info:hover, .btn-outline-info:active, .btn-outline-info:visited {
-    background-color: var(--primary-color) !important;
-    color: var(--text-light-color);
-    border-color: var(--primary-color);
+.btn-outline-info:hover,
+.btn-outline-info:active,
+.btn-outline-info:visited {
+  background-color: var(--primary-color) !important;
+  color: var(--text-light-color);
+  border-color: var(--primary-color);
 }
 
 .icon {
@@ -127,36 +129,51 @@ input.form-control:focus {
 }
 
 .alert.alert-danger,
-.alert.alert-warning{
+.alert.alert-warning {
   background-color: transparent;
   border: none;
 }
 
 .contactInfo {
-  display:flex;
-  width:80%;
-  margin:auto;
+  display: flex;
+  width: 80%;
+  margin: auto;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.alert-danger{
-  color:#e91e63;
+.alert-danger {
+  color: #e91e63;
 }
 
-.alert-warning{
-  color:#e91;
+.alert-warning {
+  color: #e91;
 }
 
-.contactInfo a{
-  display:flex;
+.contactInfo a {
+  display: flex;
   padding: 0 1rem;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
 }
 
-.btn.btn-outline-info.btn-block:disabled{
+.btn.btn-outline-info.btn-block:disabled {
   color: var(--secondary-color);
   border-color: var(--secondary-color);
+}
+
+.sendButton {
+  width: 50%;
+}
+
+@media (max-width: 700px) {
+  .sendButton {
+    width: 30vw;
+  }
+
+  .sendSucess {
+    width: 55vw;
+    margin-left: -2rem;
+  }
 }
