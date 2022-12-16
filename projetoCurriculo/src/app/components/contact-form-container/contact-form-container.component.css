@@ -121,4 +121,15 @@ input.form-control:focus {
     border-color: var(--primary-color);
 }
 
+.alert{
+  background-color: transparent;
+  border: none;
+}
 
+.alert-danger{
+  color:#e91e63;
+}
+
+.alert-warning{
+  color:#e91;
+}
