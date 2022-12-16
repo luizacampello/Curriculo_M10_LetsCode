@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, SimpleChange } from '@angular/core';
 import { NavBarData } from 'src/app/models/nav-bar-data.model';
 import { ContentService } from 'src/app/services/content.service';
 
@@ -9,6 +9,7 @@ import { ContentService } from 'src/app/services/content.service';
 })
 export class NavBarComponent {
   public NavBarData: Array<NavBarData> = [];
+  isDisplayed: boolean = true;
 
   constructor(private contentService: ContentService) {}
 
@@ -16,7 +17,23 @@ export class NavBarComponent {
     this.getNavBarArray();
   }
 
+  onResize(event:any) {
+
+    const innerWidth = event.target.innerWidth;
+
+    if (innerWidth <= 700) {
+      this.isDisplayed = false;
+    }
+    else{
+      this.isDisplayed = true;
+    }
+ }
+
   getNavBarArray() {
     this.NavBarData = this.contentService.getNavBarArray();
+  }
+
+  openCloseMenu(): void{
+    this.isDisplayed = !this.isDisplayed;
   }
 }
