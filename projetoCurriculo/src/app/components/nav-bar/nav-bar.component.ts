@@ -1,4 +1,4 @@
-import { Component, SimpleChange } from '@angular/core';
+import { Component, SimpleChange, Renderer2 } from '@angular/core';
 import { NavBarData } from 'src/app/models/nav-bar-data.model';
 import { ContentService } from 'src/app/services/content.service';
 
@@ -10,11 +10,13 @@ import { ContentService } from 'src/app/services/content.service';
 export class NavBarComponent {
   public NavBarData: Array<NavBarData> = [];
   public isDisplayed!: boolean;
+  public isMobile! : boolean;
 
-  constructor(private contentService: ContentService) {}
+  constructor(private contentService: ContentService, private renderer: Renderer2) {}
 
   ngOnInit(): void {
     this.isDisplayed = (window.innerWidth) > 700;
+    this.isMobile = !this.isDisplayed;
     this.getNavBarArray();
   }
 
@@ -24,10 +26,13 @@ export class NavBarComponent {
 
     if (innerWidth <= 700) {
       this.isDisplayed = false;
+      this.isMobile = true;
     }
     else{
       this.isDisplayed = true;
+      this.isMobile = false;
     }
+
  }
 
   getNavBarArray() {
@@ -36,5 +41,9 @@ export class NavBarComponent {
 
   openCloseMenu(): void{
     this.isDisplayed = !this.isDisplayed;
+  }
+
+  isOpenMenuMobile(): boolean{
+    return this.isDisplayed && this.isMobile;
   }
 }

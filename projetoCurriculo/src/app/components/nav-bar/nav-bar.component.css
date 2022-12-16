@@ -112,4 +112,9 @@
     color: inherit;
     width: inherit;
   }
+
+  .mobile{
+    width:100vw;
+    height: 100vh;
+  }
 }

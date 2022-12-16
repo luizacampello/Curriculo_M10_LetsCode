@@ -13,7 +13,8 @@
 
 body.bootstrap,
 body.bootstrap .card,
-body.bootstrap .color-overlay{
+body.bootstrap .color-overlay,
+body.bootstrap .mobile{
   background-color: var(--bg-light-color);
 }
 
@@ -36,7 +37,8 @@ body.bootstrap span.t-writer {
 
 body.bootstrap-dark,
 body.bootstrap-dark .card,
-body.bootstrap-dark .color-overlay {
+body.bootstrap-dark .color-overlay,
+body.bootstrap-dark .mobile {
   background-color: var(--bg-dark-color);
 }
 
