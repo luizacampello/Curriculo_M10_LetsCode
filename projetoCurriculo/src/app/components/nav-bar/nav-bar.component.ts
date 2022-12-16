@@ -40,7 +40,10 @@ export class NavBarComponent {
   }
 
   openCloseMenu(): void{
-    this.isDisplayed = !this.isDisplayed;
+    if(this.isMobile){
+      this.isDisplayed = !this.isDisplayed;
+    }
+
   }
 
   isOpenMenuMobile(): boolean{
