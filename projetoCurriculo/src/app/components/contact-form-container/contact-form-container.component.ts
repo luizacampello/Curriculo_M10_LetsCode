@@ -10,7 +10,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 export class ContactFormContainerComponent {
   public form!: FormGroup;
   public formData!: ContactFormData;
-
+  messageBox: boolean = false;
   ngOnInit() {
     this.buildForm();
   }
@@ -25,8 +25,15 @@ export class ContactFormContainerComponent {
 
   public submitForm(): void {
     this.formData = this.form.getRawValue();
+    this.messageBox = true;
 
     console.log(this.formData);
+  }
+
+  closeMessage(): void{
+    this.messageBox = false;
+    this.form.reset();
+
   }
 
   get name() { return this.form.get('name')!; };
