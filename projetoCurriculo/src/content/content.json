@@ -39,7 +39,7 @@
   "skills": [
     {
       "name": "Unity",
-      "progress": 1 
+      "progress": 1
     },
     {
       "name": "Angular",
@@ -157,7 +157,7 @@
           "beginDate": "jan/2008",
           "endDate": "jun/2012",
           "description": [],
-          "local": "Brasília-DF",
+          "local": "Universidade de Brasília-DF",
           "link": ""
         },
         {
@@ -166,7 +166,7 @@
           "beginDate": "jan/2014",
           "endDate": "dez/2016",
           "description": ["Período sanduíche na Holanda"],
-          "local": "Brasília-DF",
+          "local": "Universidade de Brasília-DF",
           "link": "https://www.cic.unb.br/"
         }
       ]

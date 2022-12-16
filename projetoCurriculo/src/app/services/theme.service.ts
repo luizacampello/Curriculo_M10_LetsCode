@@ -42,7 +42,7 @@ export class ThemeService {
   initUserPreferenceTheme() : void {
     let preference = this.aStorage.get("theme");
 
-    if(!preference) {
+    if(preference != "bootstrap-dark" && preference != "bootstrap") {
       preference = "bootstrap-dark";
       this.aStorage['set']("theme", preference);
     }
