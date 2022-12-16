@@ -126,19 +126,34 @@ input.form-control:focus {
   padding: 0 1rem;
 }
 
-.contactInfo { 
+.alert.alert-danger,
+.alert.alert-warning{
+  background-color: transparent;
+  border: none;
+}
+
+.contactInfo {
   display:flex;
   width:80%;
   margin:auto;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-
 }
+
+.alert-danger{
+  color:#e91e63;
+}
+
+.alert-warning{
+  color:#e91;
+}
+
 .contactInfo a{
   display:flex;
   padding: 0 1rem;
   align-items: center;
   justify-content:center;
 }
+
 
