@@ -1,10 +1,21 @@
-<nav class="floating-menu" id="navBar">
-    <ul class="main-menu" >
-        <li *ngFor="let page of NavBarData">
-            <a href="#{{page.href}}" class="navPages">
-                <i class="{{page.iconClass}}"></i>
-                <span class="pageName">{{page.pageName}}</span>
-            </a>
-        </li>
+<div (window:resize)="onResize($event)" class="collapseNav">
+
+  <div class="buttonBox">
+    <button (click)="openCloseMenu()"class="navbar-toggler" type="button">
+      <span class="navbar-toggler-icon"
+        ><i class="iconMenu bi bi-list"></i
+      ></span>
+    </button>
+  </div>
+
+  <nav [ngClass]="isDisplayed ? 'd-flex':'d-none'" class="navbar floating-menu" [class.mobile]="isOpenMenuMobile()" id="navBar">
+    <ul class="main-menu">
+      <li *ngFor="let page of NavBarData">
+        <a href="#{{page.href}}" class="navPages" (click)="openCloseMenu()">
+          <i class="{{ page.iconClass }}"></i>
+          <span class="pageName">{{ page.pageName }}</span>
+        </a>
+      </li>
     </ul>
-</nav>
+  </nav>
+</div>

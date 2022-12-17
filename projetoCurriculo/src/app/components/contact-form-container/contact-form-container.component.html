@@ -11,16 +11,20 @@
         <input type="text" class="form-control" id="inputNome" formControlName="name" required>
         <span for="inputNome" id="inputLabelName"><h4>Nome</h4></span>
         <span class="border"></span>
-        <div *ngIf="name.invalid && (name.dirty || name.touched)"
-        class="alert alert-danger">Nome é obrigatório</div>
+        <div *ngIf="name.invalid && name.dirty"
+        class="alert alert-danger">Digite um nome.</div>
       </label>
 
       <label class="form-group col-md-6">
         <input type="text" class="form-control" id="inputEmail" formControlName="email" required/>
         <span for="inputEmail" id="inputLabelEmail"><h4>Email</h4></span>
         <span class="border"></span>
-        <div *ngIf="email.invalid && (email.dirty || email.touched)"
-        class="alert alert-danger">Email é obrigatório</div>
+
+        <div *ngIf="email.value == '' && email.dirty"
+        class="alert alert-danger">Digite um email.</div>
+
+        <div *ngIf="email.invalid && email.dirty && email.value != '' "
+        class="alert alert-warning">Isso não parece um email!</div>
       </label>
     </div>
 
@@ -28,12 +32,21 @@
       <input type="text" class="form-control" id="inputMensagem" formControlName="message" required />
       <span for="inputMensagem" id="inputLabelMessage"><h4>Mensagem</h4></span>
       <span class="border"></span>
-      <div *ngIf="message.invalid && (message.dirty || message.touched)"
-        class="alert alert-danger">Messagem é obrigatória</div>
+      <div *ngIf="message.value == '' && message.dirty"
+        class="alert alert-danger">Digite uma mensagem.</div>
+        <div *ngIf="message.invalid && message.dirty && message.value != '' "
+        class="alert alert-warning">A mensagem precisa ter pelo menos 3 caracteres.</div>
     </label>
 
-    <div class = "m-auto w-50">
+    <div class = "m-auto sendButton">
       <button type="submit" class="btn btn-outline-info btn-block" [disabled]="form.invalid">Enviar</button>
+    </div>
+
+    <div *ngIf="messageBox" class=" mt-5 alert alert-success alert-dismissible fade show sendSucess" role="alert">
+      <strong>Sucesso, {{name.value}}!</strong> Em breve retornarei seu contato!
+      <button  (click)="closeMessage()" type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
     </div>
 
   </form>
@@ -46,4 +59,3 @@
   <a href="https://wa.me/5511998875624" target="_blank"> <i class="icon bi bi-telephone"></i> +55 11 99887-5624</a>
   <a href="mailto:contact@AliceSenna.com" target="_blank"> <i class="icon bi bi-envelope-at"></i> contact@AliceSenna.com</a>
 </div>
-

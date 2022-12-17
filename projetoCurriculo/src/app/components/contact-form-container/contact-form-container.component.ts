@@ -10,7 +10,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 export class ContactFormContainerComponent {
   public form!: FormGroup;
   public formData!: ContactFormData;
-
+  messageBox: boolean = false;
   ngOnInit() {
     this.buildForm();
   }
@@ -18,15 +18,22 @@ export class ContactFormContainerComponent {
   private buildForm(): void {
     this.form = new FormGroup({
       name: new FormControl("",Validators.required),
-      email: new FormControl("",[Validators.required, Validators.email, Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$")]),
-      message: new FormControl("",Validators.required),
+      email: new FormControl("",[Validators.required, Validators.email, Validators.pattern("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,4}$")]),
+      message: new FormControl("",[Validators.required, Validators.minLength(3)]),
     });
   }
 
   public submitForm(): void {
     this.formData = this.form.getRawValue();
+    this.messageBox = true;
 
     console.log(this.formData);
+  }
+
+  closeMessage(): void{
+    this.messageBox = false;
+    this.form.reset();
+
   }
 
   get name() { return this.form.get('name')!; };
